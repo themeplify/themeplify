@@ -1,0 +1,19 @@
+@import "./third-party-scss/bootstrap-scss/bootstrap";
+
+// font awesome
+@import "./third-party-scss/fontawesome-scss/font-awesome";
+
+
+// basic styles
+@import "./base/index";
+
+// layout styles
+@import "./layout/index";
+
+// components
+@import "./components/index";
+
+
+// main style
+@import "style";
+
