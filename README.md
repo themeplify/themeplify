@@ -1,2 +1,2 @@
 # themeplify
-Themeforest theme
+Themeforest Theme
