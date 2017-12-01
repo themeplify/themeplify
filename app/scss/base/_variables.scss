@@ -11,3 +11,17 @@ $baseFontSize: 10;
 
 	@return $pixels / $context * 1rem;
 }
+
+// variables for fonts
+$heading-font: 'Playfair Display', serif;
+$content-font: 'Roboto', sans-serif;
+
+// variables for colors
+$white: #ffffff;
+$black: #000000;
+$dark-gray: #373333;
+$light-gray: #f2f5f6;
+$text-gray: #707070;
+
+// theme colors
+$orange: #f94f22;

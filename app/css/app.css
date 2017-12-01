@@ -8198,10 +8198,13 @@ a.text-dark:focus, a.text-dark:hover {
   clip: auto; }
 
 html {
-  font-size: 62.5%; }
+  font-family: "Roboto", sans-serif; }
 
 img {
   max-width: 100%; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif; }
 
 header {
   position: relative; }
@@ -8212,3 +8215,24 @@ header {
     left: 0;
     min-height: 80px;
     border-bottom: 1px solid #6b6865; }
+
+.btn.btn-primary {
+  background-color: #f94f22;
+  border: 1px solid transparent;
+  text-transform: capitalize; }
+  .btn.btn-primary:hover {
+    background-color: transparent;
+    border: 1px solid #f94f22;
+    color: #f94f22; }
+  .btn.btn-primary:active {
+    background-color: transparent;
+    border: 1px solid #f94f22;
+    color: #f94f22; }
+
+.btn.btn-outline-primary {
+  border-color: #f94f22;
+  color: #f94f22; }
+  .btn.btn-outline-primary:hover {
+    border-color: transparent;
+    background-color: #f94f22;
+    color: #ffffff; }

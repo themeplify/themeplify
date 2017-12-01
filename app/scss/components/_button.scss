@@ -1,0 +1,26 @@
+.btn{
+	&.btn-primary{
+		background-color: $orange;
+		border: 1px solid transparent;
+		text-transform: capitalize;
+		&:hover{
+			background-color: transparent;
+			border: 1px solid $orange;
+			color: $orange;
+		}
+		&:active{
+			background-color: transparent;
+			border: 1px solid $orange;
+			color: $orange;
+		}
+	}
+	&.btn-outline-primary{
+		border-color: $orange;
+		color: $orange;
+		&:hover{
+			border-color: transparent;
+			background-color: $orange;
+			color: $white;
+		}
+	}
+}
