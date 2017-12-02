@@ -8198,6 +8198,7 @@ a.text-dark:focus, a.text-dark:hover {
   clip: auto; }
 
 html {
+  font-size: 16px;
   font-family: "Roboto", sans-serif; }
 
 img {
@@ -8214,25 +8215,72 @@ header {
     top: 0;
     left: 0;
     min-height: 80px;
-    border-bottom: 1px solid #6b6865; }
+    border-bottom: 1px solid #6b6865;
+    padding: 0; }
+    header .header-nav .navbar-brand {
+      width: 10rem; }
+    header .header-nav .navbar-nav .nav-item .nav-link {
+      color: #ffffff;
+      text-transform: capitalize;
+      padding: 1.875rem 0.9375rem;
+      position: relative;
+      z-index: 9; }
+      header .header-nav .navbar-nav .nav-item .nav-link:after {
+        height: 0px;
+        top: 0;
+        left: 0;
+        width: 100%;
+        content: '';
+        position: absolute;
+        background-color: #f94f22;
+        z-index: -1;
+        transition: all .3s; }
+      header .header-nav .navbar-nav .nav-item .nav-link:hover:after {
+        height: 100%; }
+    header .header-nav .navbar-nav .nav-item.active .nav-link:after {
+      height: 100%; }
 
-.btn.btn-primary {
-  background-color: #f94f22;
-  border: 1px solid transparent;
+.btn {
+  cursor: pointer;
+  margin-bottom: 1.875rem;
+  margin-right: 0.9375rem;
   text-transform: capitalize; }
-  .btn.btn-primary:hover {
-    background-color: transparent;
-    border: 1px solid #f94f22;
-    color: #f94f22; }
-  .btn.btn-primary:active {
-    background-color: transparent;
-    border: 1px solid #f94f22;
-    color: #f94f22; }
-
-.btn.btn-outline-primary {
-  border-color: #f94f22;
-  color: #f94f22; }
-  .btn.btn-outline-primary:hover {
-    border-color: transparent;
+  .btn.btn-primary {
     background-color: #f94f22;
-    color: #ffffff; }
+    border: 1px solid transparent;
+    text-transform: capitalize; }
+    .btn.btn-primary:hover {
+      background-color: transparent;
+      border: 1px solid #f94f22;
+      color: #f94f22; }
+    .btn.btn-primary.active {
+      background-color: transparent;
+      border: 1px solid #f94f22;
+      color: #f94f22; }
+  .btn.btn-outline-primary {
+    border-color: #f94f22;
+    color: #f94f22; }
+    .btn.btn-outline-primary:hover {
+      border-color: transparent;
+      background-color: #f94f22;
+      color: #ffffff; }
+    .btn.btn-outline-primary.active {
+      border-color: transparent;
+      background-color: #f94f22;
+      color: #ffffff; }
+
+.banner-content-holder {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%; }
+  .banner-content-holder .banner-content {
+    text-align: center;
+    display: table;
+    margin: 0 auto; }
+    .banner-content-holder .banner-content h1 {
+      font-size: 40px;
+      color: #ffffff;
+      line-height: 10;
+      font-weight: bold;
+      font-family: Playfair Display; }

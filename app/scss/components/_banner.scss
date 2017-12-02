@@ -1,0 +1,14 @@
+.banner-content-holder{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	.banner-content{
+		text-align: center;
+		display: table;
+		margin: 0 auto;
+		h1{
+			@include font-mixin( 40px, $white, 10, bold, Playfair Display ); 
+		}
+	}
+}

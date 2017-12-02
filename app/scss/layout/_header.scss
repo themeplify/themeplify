@@ -7,5 +7,43 @@ header{
 		left: 0;
 		min-height: 80px;
 		border-bottom: 1px solid #6b6865;
+		padding: 0;
+		.navbar-brand{
+			width: rem(160);
+		}
+		.navbar-nav{
+			.nav-item{
+				.nav-link{
+					color: $white;
+					text-transform: capitalize;
+					padding: rem(30) rem(15);
+					position: relative;
+					z-index: 9;
+					&:after{
+						height: 0px;
+						top: 0;
+						left: 0;
+						width: 100%;
+						content: '';
+						position: absolute;
+						background-color: $orange;
+						z-index: -1;
+						transition: all .3s;
+					}
+					&:hover{
+						&:after{
+							height: 100%;
+						}
+					}
+				}
+				&.active{
+					.nav-link{
+						&:after{
+							height: 100%;
+						}
+					}
+				}
+			}
+		}
 	}
 }
