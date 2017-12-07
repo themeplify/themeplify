@@ -17,3 +17,16 @@ $heading-font: 'Playfair Display', serif;
 $content-font: 'Roboto', sans-serif;
 
 // variables for colors
+
+// theme colors
+$orange: #f94f22;
+
+
+// define theme color ( so that we just have to use $primary-color )
+$primary-color: $orange;
+
+
+// defing class
+.primary-color{
+	color: $primary-color;
+}
