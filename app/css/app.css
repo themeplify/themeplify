@@ -8220,7 +8220,7 @@ header {
     header .header-nav .navbar-brand {
       width: 10rem; }
     header .header-nav .navbar-nav .nav-item .nav-link {
-      color: #ffffff;
+      color: #fff;
       text-transform: capitalize;
       padding: 1.875rem 0.9375rem;
       position: relative;
@@ -8232,7 +8232,7 @@ header {
         width: 100%;
         content: '';
         position: absolute;
-        background-color: #f94f22;
+        background-color: #fd7e14;
         z-index: -1;
         transition: all .3s; }
       header .header-nav .navbar-nav .nav-item .nav-link:hover:after {
@@ -8246,28 +8246,28 @@ header {
   margin-right: 0.9375rem;
   text-transform: capitalize; }
   .btn.btn-primary {
-    background-color: #f94f22;
+    background-color: #fd7e14;
     border: 1px solid transparent;
     text-transform: capitalize; }
     .btn.btn-primary:hover {
       background-color: transparent;
-      border: 1px solid #f94f22;
-      color: #f94f22; }
+      border: 1px solid #fd7e14;
+      color: #fd7e14; }
     .btn.btn-primary.active {
       background-color: transparent;
-      border: 1px solid #f94f22;
-      color: #f94f22; }
+      border: 1px solid #fd7e14;
+      color: #fd7e14; }
   .btn.btn-outline-primary {
-    border-color: #f94f22;
-    color: #f94f22; }
+    border-color: #fd7e14;
+    color: #fd7e14; }
     .btn.btn-outline-primary:hover {
       border-color: transparent;
-      background-color: #f94f22;
-      color: #ffffff; }
+      background-color: #fd7e14;
+      color: #fff; }
     .btn.btn-outline-primary.active {
       border-color: transparent;
-      background-color: #f94f22;
-      color: #ffffff; }
+      background-color: #fd7e14;
+      color: #fff; }
 
 .banner-content-holder {
   position: absolute;
@@ -8280,7 +8280,32 @@ header {
     margin: 0 auto; }
     .banner-content-holder .banner-content h1 {
       font-size: 40px;
-      color: #ffffff;
+      color: #fff;
       line-height: 10;
       font-weight: bold;
       font-family: Playfair Display; }
+
+.style-guide header {
+  background: #24d3f9;
+  padding: 4.375rem;
+  color: #fff; }
+
+.style-guide main {
+  margin-top: 30px; }
+  .style-guide main .grid-holder [class*="col-"] div {
+    background-color: #e7e9eb;
+    min-height: 100px; }
+  .style-guide main .grid-holder .tablet-grid {
+    max-width: 768px; }
+  .style-guide main .clr-palette-holder .clr {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+    display: block;
+    background-color: red; }
+  .style-guide main .clr-palette-holder p {
+    margin-bottom: 0; }
+  .style-guide main .clr-palette-holder .col-md-3 {
+    margin-bottom: 1.875rem; }
+  .style-guide main section {
+    margin-bottom: 1.875rem; }
