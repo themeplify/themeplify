@@ -8197,6 +8197,9 @@ a.text-dark:focus, a.text-dark:hover {
   overflow: visible;
   clip: auto; }
 
+.primary-color {
+  color: #f94f22; }
+
 html {
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
@@ -8204,8 +8207,59 @@ html {
 img {
   max-width: 100%; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display", serif; }
+h1, .h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: red; }
+
+h2, .h2 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: blue; }
+
+h3, .h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: green; }
+
+h4, .h4 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: yellow; }
+
+h5, .h5 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: pink; }
+
+h6, .h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: black; }
+
+h1, .h1 {
+  font-size: 40px;
+  line-height: 1.6; }
+
+h2, .h2 {
+  font-size: 35px;
+  line-height: 1.4; }
+
+h3, .h3 {
+  font-size: 30px;
+  line-height: 1.4; }
+
+h4, .h4 {
+  font-size: 25px;
+  line-height: 1.3; }
+
+h5, .h5 {
+  font-size: 22px;
+  line-height: 1.2; }
+
+h6, .h6 {
+  font-size: 20px;
+  line-height: 1.2; }
 
 header {
   position: relative; }
@@ -8280,7 +8334,7 @@ header {
     margin: 0 auto; }
     .banner-content-holder .banner-content h1 {
       font-size: 40px;
-      color: #ffffff;
-      line-height: 10;
-      font-weight: bold;
+      line-height: #ffffff;
+      font-weight: 10;
+      color: bold;
       font-family: Playfair Display; }

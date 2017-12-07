@@ -25,3 +25,13 @@ $text-gray: #707070;
 
 // theme colors
 $orange: #f94f22;
+
+
+// define theme color ( so that we just have to use $primary-color )
+$primary-color: $orange;
+
+
+// defing class
+.primary-color{
+	color: $primary-color;
+}
