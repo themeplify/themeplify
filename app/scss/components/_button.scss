@@ -3,11 +3,13 @@
 	margin-bottom: rem(30);
 	margin-right: rem(15);
 	text-transform: capitalize;
-	// primary buttons
-	&.btn-primary{
+	min-width: rem(120);
+	// orange solid
+	&.btn-solid-orange{
 		background-color: $orange;
 		border: 1px solid transparent;
 		text-transform: capitalize;
+		color: $white;
 		&:hover{
 			background-color: transparent;
 			border: 1px solid $orange;
@@ -19,10 +21,28 @@
 			color: $orange;
 		}
 	}
-	// secondary-button
-	&.btn-outline-primary{
+	//black Solid
+	&.btn-solid-black{
+		background-color: $black;
+		border: 1px solid transparent;
+		text-transform: capitalize;
+		color: $white;
+		&:hover{
+			background-color: transparent;
+			border: 1px solid $black;
+			color: $black;
+		}
+		&.active{
+			background-color: transparent;
+			border: 1px solid $black;
+			color: $black;
+		}
+	}
+	// orange outline
+	&.btn-outline-orange{
 		border-color: $orange;
 		color: $orange;
+		background-color: transparent;
 		&:hover{
 			border-color: transparent;
 			background-color: $orange;
@@ -31,6 +51,22 @@
 		&.active{
 			border-color: transparent;
 			background-color: $orange;
+			color: $white;
+		}
+	}
+	//black outline
+	&.btn-outline-black{
+		border-color: $black;
+		color: $black;
+		background-color: transparent;
+		&:hover{
+			border-color: transparent;
+			background-color: $black;
+			color: $white;
+		}
+		&.active{
+			border-color: transparent;
+			background-color: $black;
 			color: $white;
 		}
 	}

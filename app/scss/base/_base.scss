@@ -1,9 +1,31 @@
 html {
     font-size:16px;
-    font-family: $content-font;
+    font-family: $roboto;
 }
 body{
 }
 img{
 	max-width: 100%;
+}
+
+// common classes
+.section-padding{
+	padding: rem(100) 0;
+}
+.bg-gray-200{
+	background-color: $gray-200;
+}
+.bg-orange{
+	background-color: $orange;
+	color: $white;
+}
+.section-sub-title{
+	max-width: 60%;
+	margin: 0 auto;
+	margin-bottom: rem(50) !important;
+}
+p{
+	&:last-of-type{
+		margin-bottom: 0;
+	}
 }

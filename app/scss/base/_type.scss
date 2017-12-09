@@ -1,5 +1,6 @@
 //unchange -> color, font-weight, font-family
-$typo-look: ($heading-font, 600, red) ($heading-font, 600, blue) ($heading-font, 600, green) ($heading-font, 600, yellow) ($heading-font, 600, pink) ($heading-font, 600, black);
+$typo-look: ($roboto, $roboto-thin, #333) ($roboto, $roboto-light, #333) ($roboto, $roboto-light, red) ($roboto, $roboto-bold, #333) ($roboto, $roboto-regular, #333) ($roboto, $roboto-regular, #333);
+
 @each $font-family, $font-weight, $color in $typo-look {
 	$i: index(($typo-look), ($font-family, $font-weight, $color));
 	h#{$i}, .h#{$i} {
@@ -10,11 +11,26 @@ $typo-look: ($heading-font, 600, red) ($heading-font, 600, blue) ($heading-font,
 }
 
 // change -> font-size, line height, margin
-$typo-size: (40px, 1.6) (35px, 1.4) (30px, 1.4) (25px, 1.3) (22px, 1.2) (20px, 1.2);
+$typo-size: (rem(55), 1) (rem(42), 1) (rem(25), 1) (rem(20), 1.3) (rem(16), 1.2) (rem(15), 1.2);
+
 @each $font-size, $line-height in $typo-size {
 	$i: index(($typo-size), ($font-size, $line-height));
 	h#{$i}, .h#{$i} {
 		font-size: $font-size;
 		line-height: $line-height;
 	}
+}
+
+p, .body-copy{
+	font-size: rem(16);
+	margin-bottom: rem(25);
+	line-height: 1.5;
+}
+.text-large{
+	font-size: rem(18);
+	margin-bottom: rem(20);
+}
+.text-small{
+	font-size: rem(14);
+	margin-bottom: rem(1);
 }
