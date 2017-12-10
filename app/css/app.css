@@ -8895,6 +8895,24 @@ header {
     .who-we-are .who-we-are-content .abt-sign {
       margin-top: 2.5rem; }
 
+.parallax-section {
+  background: url(../images/parallax.jpg);
+  position: relative;
+  background-position: fixed; }
+  .parallax-section:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(17, 17, 17, 0.83);
+    content: '';
+    top: 0;
+    left: 0; }
+  .parallax-section .section-sub-title {
+    max-width: 100%; }
+  .parallax-section .container {
+    position: relative;
+    z-index: 9; }
+
 .btn {
   cursor: pointer;
   margin-bottom: 1.875rem;
