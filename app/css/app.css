@@ -8915,7 +8915,7 @@ header {
 
 .btn {
   cursor: pointer;
-  margin-bottom: 1.875rem;
+  margin-bottom: 0rem;
   margin-right: 0.9375rem;
   text-transform: capitalize;
   min-width: 7.5rem; }
