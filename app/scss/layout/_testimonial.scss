@@ -1,0 +1,17 @@
+.tesimonial{
+    background: url('../images/testimonial-bkg.jpg') no-repeat center;
+    background-size: cover;
+    .testimonial-outer-wrapper{
+        background: #fff;
+        padding-left: 85px;
+        padding-right: 85px; 
+    }
+    .testimonial-carousel{
+        .testimonial-img-wrap{
+            margin: 25px 0;
+        }
+        .client-info{
+            margin: 25px 0;
+        }
+    }
+}

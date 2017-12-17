@@ -1,0 +1,21 @@
+.parallax-section{
+	background: url(../images/parallax.jpg);
+	position: relative;
+	background-position: fixed;
+	&:after{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		background-color: rgba(17, 17, 17, .83);
+		content: '';
+		top: 0;
+		left: 0;
+	}
+	.section-sub-title{
+		max-width: 100%;
+	}
+	.container{
+		position: relative;
+		z-index: 9;
+	}
+}

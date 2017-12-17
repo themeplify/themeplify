@@ -7,7 +7,16 @@ body{
 img{
 	max-width: 100%;
 }
-
+a, a:visited, a:focus {
+    text-decoration: none;
+    outline: 0;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover {
+    text-decoration: none;
+}
+.no-decoration:hover{
+	text-decoration: none;
+}
 // common classes
 .section-padding{
 	padding: rem(100) 0;
