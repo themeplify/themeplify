@@ -1,0 +1,34 @@
+.what-we-offer{
+	position: relative;
+	.offer-side-image{
+		position: absolute;
+		&.keyboard-img{
+			right: 0;
+			top: 0;
+		}
+		&.pen-img{
+			top: 50px;
+			left: 50px;
+		}
+		&.cup-img{
+			bottom: 0px;
+			left: 50px;
+		}
+	}
+	.offer-box-holder{
+		position: relative;
+		z-index: 9;
+		.each-offer-box{
+			padding: rem(65) rem(35);
+			background-color: $white;
+			margin-bottom: 30px;
+			text-align: center;
+			.offer-icon{
+				font-size: rem(45);
+				color: $orange;
+				display: inline-block;
+				margin-bottom: rem(15);
+			}
+		}
+	}
+}

@@ -1,0 +1,61 @@
+.contact{
+    color: $white;
+    h2{
+        color: inherit;
+    }
+    .map-holder{
+        margin: 0 -15px;
+    }
+    .contact-form-holder{
+        padding: 35px 50px;
+        form{
+            margin-top: 25px;
+            .form-group{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 0;
+                    height: 1px;
+                    background: red;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    transition: all 0.3s;
+                }
+                &:focus:after{
+                    width: 100%;
+                }
+                .form-control{
+                    background: transparent;
+                    border:none;
+                    border-bottom: 1px dashed #fff;
+                    color: inherit;
+                    padding: 8px 2px;
+                    border-radius: 0;
+                    resize: none;
+                    transition: all 0.3s;
+
+
+                    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                        color: $white;
+                    }
+                    &::-moz-placeholder { /* Firefox 19+ */
+                        color: $white;
+                    }
+                    &:-ms-input-placeholder { /* IE 10+ */
+                        color: $white;
+                    }
+                    &:-moz-placeholder { /* Firefox 18- */
+                        color: $white;
+                    }
+
+                    &:focus, &:active, {
+                        outline: none !important;
+                        box-shadow: none !important;
+                    }
+                }
+            }
+        }
+    }
+}

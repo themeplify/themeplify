@@ -1,0 +1,17 @@
+.who-we-are{
+	position: relative;
+	overflow: hidden;
+	.who-we-are-main-img{
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		overflow: hidden;
+	}
+	.who-we-are-content{
+		padding-right: rem(120);
+		.abt-sign{
+			margin-top: rem(40);
+		}
+	}
+}
