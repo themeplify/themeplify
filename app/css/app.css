@@ -8200,18 +8200,9 @@ a.text-dark:focus, a.text-dark:hover {
 .primary-text-color {
   color: #f94f22; }
 
-<<<<<<< HEAD
 .primary-bkg-color {
   background-color: #f94f22; }
 
-=======
-<<<<<<< HEAD
-.primary-bkg-color {
-  background-color: #f94f22; }
-
-=======
->>>>>>> f0fd2f2dbf198ecadf57a61e0f4fdda32b8ce9ee
->>>>>>> deep
 @font-face {
   font-family: 'Linearicons-Free';
   src: url("../fonts/Linearicons-Free.eot?w118d");
@@ -8741,21 +8732,13 @@ a.text-dark:focus, a.text-dark:hover {
 .lnr-pointer-left:before {
   content: "\e8a9"; }
 
-<<<<<<< HEAD
 body {
-=======
-html {
->>>>>>> f0fd2f2dbf198ecadf57a61e0f4fdda32b8ce9ee
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
 
 img {
   max-width: 100%; }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> deep
 a, a:visited, a:focus {
   text-decoration: none;
   outline: 0; }
@@ -8766,11 +8749,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hove
 .no-decoration:hover {
   text-decoration: none; }
 
-<<<<<<< HEAD
-=======
-=======
->>>>>>> f0fd2f2dbf198ecadf57a61e0f4fdda32b8ce9ee
->>>>>>> deep
 .section-padding {
   padding: 6.25rem 0; }
 
@@ -8789,13 +8767,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hove
 p:last-of-type {
   margin-bottom: 0; }
 
-<<<<<<< HEAD
 .center-div {
   float: none;
   margin: 0 auto; }
 
-=======
->>>>>>> f0fd2f2dbf198ecadf57a61e0f4fdda32b8ce9ee
 h1, .h1 {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
@@ -8896,7 +8871,6 @@ header {
     header .header-nav .navbar-nav .nav-item.active .nav-link:after {
       height: 100%; }
 
-<<<<<<< HEAD
 .carousel-item {
   height: 100vh;
   min-height: 300px;
@@ -8931,8 +8905,6 @@ body,
 .carousel-item:nth-child(3) {
   background-color: yellow; }
 
-=======
->>>>>>> f0fd2f2dbf198ecadf57a61e0f4fdda32b8ce9ee
 .what-we-offer {
   position: relative; }
   .what-we-offer .offer-side-image {
@@ -8992,7 +8964,6 @@ body,
     position: relative;
     z-index: 9; }
 
-<<<<<<< HEAD
 .counter {
   background-image: url(../images/counter-background.jpg);
   background-color: rgba(0, 0, 0, 0.3);
@@ -9152,69 +9123,7 @@ body,
           .contact .contact-form-holder form .form-group .form-control:focus, .contact .contact-form-holder form .form-group .form-control:active {
             outline: none !important;
             box-shadow: none !important; }
-<<<<<<< HEAD
 
-.btn {
-  cursor: pointer;
-  margin-bottom: 1.875rem;
-  margin-right: 0.9375rem;
-  text-transform: capitalize;
-  min-width: 7.5rem; }
-  .btn.btn-solid-orange {
-    background-color: #f94f22;
-    border: 1px solid transparent;
-    text-transform: capitalize;
-    color: #fff; }
-    .btn.btn-solid-orange:hover {
-      background-color: transparent;
-      border: 1px solid #f94f22;
-      color: #f94f22; }
-    .btn.btn-solid-orange.active {
-      background-color: transparent;
-      border: 1px solid #f94f22;
-      color: #f94f22; }
-  .btn.btn-solid-black {
-    background-color: #000;
-    border: 1px solid transparent;
-    text-transform: capitalize;
-    color: #fff; }
-    .btn.btn-solid-black:hover {
-      background-color: transparent;
-      border: 1px solid #000;
-      color: #000; }
-    .btn.btn-solid-black.active {
-      background-color: transparent;
-      border: 1px solid #000;
-      color: #000; }
-  .btn.btn-outline-orange {
-    border-color: #f94f22;
-    color: #f94f22;
-    background-color: transparent; }
-    .btn.btn-outline-orange:hover {
-      border-color: transparent;
-      background-color: #f94f22;
-      color: #fff; }
-    .btn.btn-outline-orange.active {
-      border-color: transparent;
-      background-color: #f94f22;
-      color: #fff; }
-  .btn.btn-outline-black {
-    border-color: #000;
-    color: #000;
-    background-color: transparent; }
-    .btn.btn-outline-black:hover {
-      border-color: transparent;
-      background-color: #000;
-      color: #fff; }
-    .btn.btn-outline-black.active {
-      border-color: transparent;
-      background-color: #000;
-      color: #fff; }
-=======
->>>>>>> deep
-
-=======
->>>>>>> f0fd2f2dbf198ecadf57a61e0f4fdda32b8ce9ee
 .btn {
   cursor: pointer;
   margin-bottom: 0rem;
@@ -9272,7 +9181,6 @@ body,
       background-color: #000;
       color: #fff; }
 
-<<<<<<< HEAD
 .single-image-banner {
   position: relative; }
   .single-image-banner img.banner-img {
@@ -9297,23 +9205,6 @@ body,
   width: 100%;
   position: relative;
   color: #fff; }
-=======
-.banner-content-holder {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%; }
-  .banner-content-holder .banner-content {
-    text-align: center;
-    display: table;
-    margin: 0 auto; }
-    .banner-content-holder .banner-content h1 {
-      font-size: 40px;
-      line-height: #fff;
-      font-weight: 10;
-      color: bold;
-      font-family: Playfair Display; }
->>>>>>> f0fd2f2dbf198ecadf57a61e0f4fdda32b8ce9ee
 
 .style-guide header {
   background: #24d3f9;
