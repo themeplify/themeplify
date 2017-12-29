@@ -1,8 +1,6 @@
-html {
+body{
     font-size:16px;
     font-family: $roboto;
-}
-body{
 }
 img{
 	max-width: 100%;
@@ -37,4 +35,8 @@ p{
 	&:last-of-type{
 		margin-bottom: 0;
 	}
+}
+.center-div{
+	float: none;
+	margin: 0 auto;
 }

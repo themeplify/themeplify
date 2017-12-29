@@ -8732,7 +8732,7 @@ a.text-dark:focus, a.text-dark:hover {
 .lnr-pointer-left:before {
   content: "\e8a9"; }
 
-html {
+body {
   font-size: 16px;
   font-family: "Roboto", sans-serif; }
 
@@ -8766,6 +8766,10 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hove
 
 p:last-of-type {
   margin-bottom: 0; }
+
+.center-div {
+  float: none;
+  margin: 0 auto; }
 
 h1, .h1 {
   font-family: "Roboto", sans-serif;
@@ -8866,6 +8870,40 @@ header {
         height: 100%; }
     header .header-nav .navbar-nav .nav-item.active .nav-link:after {
       height: 100%; }
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.carousel-fade .carousel-item {
+  display: block;
+  position: absolute;
+  opacity: 0;
+  transition: opacity .75s ease-in-out; }
+  .carousel-fade .carousel-item.active {
+    opacity: 1; }
+
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-item {
+  width: 100%;
+  height: 100%; }
+
+.carousel-item:nth-child(1) {
+  background-color: red; }
+
+.carousel-item:nth-child(2) {
+  background-color: blue; }
+
+.carousel-item:nth-child(3) {
+  background-color: yellow; }
 
 .what-we-offer {
   position: relative; }
@@ -9086,21 +9124,87 @@ header {
             outline: none !important;
             box-shadow: none !important; }
 
-.banner-content-holder {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  width: 100%; }
-  .banner-content-holder .banner-content {
-    text-align: center;
-    display: table;
-    margin: 0 auto; }
-    .banner-content-holder .banner-content h1 {
-      font-size: 40px;
-      line-height: #fff;
-      font-weight: 10;
-      color: bold;
-      font-family: Playfair Display; }
+.btn {
+  cursor: pointer;
+  margin-bottom: 1.875rem;
+  margin-right: 0.9375rem;
+  text-transform: capitalize;
+  min-width: 7.5rem; }
+  .btn.btn-solid-orange {
+    background-color: #f94f22;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    color: #fff; }
+    .btn.btn-solid-orange:hover {
+      background-color: transparent;
+      border: 1px solid #f94f22;
+      color: #f94f22; }
+    .btn.btn-solid-orange.active {
+      background-color: transparent;
+      border: 1px solid #f94f22;
+      color: #f94f22; }
+  .btn.btn-solid-black {
+    background-color: #000;
+    border: 1px solid transparent;
+    text-transform: capitalize;
+    color: #fff; }
+    .btn.btn-solid-black:hover {
+      background-color: transparent;
+      border: 1px solid #000;
+      color: #000; }
+    .btn.btn-solid-black.active {
+      background-color: transparent;
+      border: 1px solid #000;
+      color: #000; }
+  .btn.btn-outline-orange {
+    border-color: #f94f22;
+    color: #f94f22;
+    background-color: transparent; }
+    .btn.btn-outline-orange:hover {
+      border-color: transparent;
+      background-color: #f94f22;
+      color: #fff; }
+    .btn.btn-outline-orange.active {
+      border-color: transparent;
+      background-color: #f94f22;
+      color: #fff; }
+  .btn.btn-outline-black {
+    border-color: #000;
+    color: #000;
+    background-color: transparent; }
+    .btn.btn-outline-black:hover {
+      border-color: transparent;
+      background-color: #000;
+      color: #fff; }
+    .btn.btn-outline-black.active {
+      border-color: transparent;
+      background-color: #000;
+      color: #fff; }
+
+.single-image-banner {
+  position: relative; }
+  .single-image-banner img.banner-img {
+    width: 100%;
+    height: auto; }
+  .single-image-banner .banner-content-holder {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-30%);
+    left: 0;
+    right: 0;
+    width: 800px;
+    max-width: 100%;
+    padding: 15px;
+    margin: auto; }
+    .single-image-banner .banner-content-holder h1, .single-image-banner .banner-content-holder h3, .single-image-banner .banner-content-holder p {
+      color: #fff; }
+    .single-image-banner .banner-content-holder h3 {
+      margin: 15px 0 25px; }
+
+.banner {
+  width: 100%;
+  position: relative;
+  color: #fff; }
 
 .style-guide header {
   background: #24d3f9;
