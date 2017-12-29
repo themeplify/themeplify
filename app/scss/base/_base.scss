@@ -1,42 +1,60 @@
-body{
-    font-size:16px;
+body {
+    font-size: 16px;
     font-family: $roboto;
 }
-img{
-	max-width: 100%;
+
+img {
+    max-width: 100%;
 }
-a, a:visited, a:focus {
+
+a,
+a:visited,
+a:focus {
     text-decoration: none;
     outline: 0;
 }
-h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, p a:hover {
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover,
+h5 a:hover,
+h6 a:hover,
+p a:hover {
     text-decoration: none;
 }
-.no-decoration:hover{
-	text-decoration: none;
+
+.no-decoration:hover {
+    text-decoration: none;
 }
+
 // common classes
-.section-padding{
-	padding: rem(100) 0;
+.section-padding {
+    padding: rem(100) 0;
 }
-.bg-gray-200{
-	background-color: $gray-200;
+
+.bg-gray-200 {
+    background-color: $gray-200;
 }
-.bg-orange{
-	background-color: $orange;
-	color: $white;
+
+.bg-orange {
+    background-color: $orange;
+    color: $white;
 }
-.section-sub-title{
-	max-width: 60%;
-	margin: 0 auto;
-	margin-bottom: rem(50) !important;
+
+.section-sub-title {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-bottom: rem(50) !important;
 }
-p{
-	&:last-of-type{
-		margin-bottom: 0;
-	}
+
+p {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 }
-.center-div{
-	float: none;
-	margin: 0 auto;
+
+.center-div {
+    float: none;
+    margin: 0 auto;
 }
