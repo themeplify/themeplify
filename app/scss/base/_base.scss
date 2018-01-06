@@ -28,6 +28,11 @@ p a:hover {
     text-decoration: none;
 }
 
+ul{
+	margin: 0;
+	padding: 0;
+}
+
 // common classes
 .section-padding {
     padding: rem(100) 0;
@@ -54,7 +59,12 @@ p {
     }
 }
 
-.center-div {
+
+.bg-gray-700{
+	background-color: $gray-700;
+}
+
+.center-div{
     float: none;
     margin: 0 auto;
 }
