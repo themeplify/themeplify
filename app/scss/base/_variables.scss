@@ -55,6 +55,10 @@ $orange: #f94f22;
 $primary-color: $orange;
 
 // defing class
-.primary-color{
+.primary-text-color{
 	color: $primary-color;
 }
+.primary-bkg-color{
+	background-color: $primary-color;
+}
+
