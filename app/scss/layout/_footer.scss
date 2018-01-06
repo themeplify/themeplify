@@ -1,0 +1,29 @@
+footer{
+	background-attachment: fixed;
+	.footer-logo{
+		margin-bottom: rem(20);
+	}
+	.social-icons{
+		ul{
+			li{
+				display: inline-block;
+				margin-right: rem(10);
+				a{
+					height: rem(30);
+					width: rem(30);
+					display: block;
+					color: $gray-900;
+					border-radius: 50%;
+					background-color: $white;
+					text-align: center;
+					line-height: rem(30);
+				}
+			}
+		}
+	}
+
+	.bottom-footer{
+		border-top: 1px solid $gray-200;
+		padding: 30px 0px;
+	}
+}

@@ -8736,6 +8736,10 @@ html {
 img {
   max-width: 100%; }
 
+ul {
+  margin: 0;
+  padding: 0; }
+
 .section-padding {
   padding: 6.25rem 0; }
 
@@ -8753,6 +8757,9 @@ img {
 
 p:last-of-type {
   margin-bottom: 0; }
+
+.bg-gray-700 {
+  background-color: #495057; }
 
 h1, .h1 {
   font-family: "Roboto", sans-serif;
@@ -8854,6 +8861,26 @@ header {
     header .header-nav .navbar-nav .nav-item.active .nav-link:after {
       height: 100%; }
 
+footer {
+  background-attachment: fixed; }
+  footer .footer-logo {
+    margin-bottom: 1.25rem; }
+  footer .social-icons ul li {
+    display: inline-block;
+    margin-right: 0.625rem; }
+    footer .social-icons ul li a {
+      height: 1.875rem;
+      width: 1.875rem;
+      display: block;
+      color: #212529;
+      border-radius: 50%;
+      background-color: #fff;
+      text-align: center;
+      line-height: 1.875rem; }
+  footer .bottom-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 30px 0px; }
+
 .what-we-offer {
   position: relative; }
   .what-we-offer .offer-side-image {
@@ -8913,12 +8940,40 @@ header {
     position: relative;
     z-index: 9; }
 
+.newsletter-subscription {
+  background: url(../images/newsletter-background.jpg);
+  background-size: cover;
+  background-position: center center; }
+  .newsletter-subscription .section-sub-title {
+    max-width: 100%;
+    margin-left: 0; }
+  .newsletter-subscription .form-group .form-control {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: calc(100% - 120px);
+    float: left;
+    color: #fff; }
+  .newsletter-subscription .form-group input[type="submit"] {
+    width: 120px;
+    text-align: center;
+    float: left;
+    margin-right: 0px;
+    height: 40px; }
+
+input.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 0px;
+  height: 2.5rem; }
+  input.form-control:focus {
+    background-color: rgba(255, 255, 255, 0.1); }
+
 .btn {
   cursor: pointer;
   margin-bottom: 0rem;
   margin-right: 0.9375rem;
   text-transform: capitalize;
-  min-width: 7.5rem; }
+  min-width: 7.5rem;
+  border-radius: 0px; }
   .btn.btn-solid-orange {
     background-color: #f94f22;
     border: 1px solid transparent;
