@@ -1,0 +1,18 @@
+main{
+	ul{
+		margin-top: 20px;
+		li{
+			position: relative;
+			list-style: none;
+			padding-left:rem(30);
+			padding-bottom: rem(10);
+			&:before{
+				position: absolute;
+				top: -2px;
+				left: 0;
+				content: "\f00c";
+				font-family: 'FontAwesome';
+			}
+		}
+	}
+}
