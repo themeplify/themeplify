@@ -1,31 +1,28 @@
 // function Convert PX to REM
 $baseFontSize: 16;
 @function rem($pixels, $context: $baseFontSize) {
-	@if (unitless($pixels)) {
-		$pixels: $pixels * 1px;
-	}
-
-	@if (unitless($context)) {
-		$context: $context * 1px;
-	}
-
-	@return $pixels / $context * 1rem;
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+    @return $pixels / $context * 1rem;
 }
 
 // variables for fonts
-$playfair-display: 'Playfair Display', serif;
-
-$roboto: 'Roboto', sans-serif;
+$playfair-display: 'Playfair Display',
+serif;
+$roboto: 'Roboto',
+sans-serif;
 $roboto-thin: 100;
 $roboto-light: 300;
 $roboto-regular: 400;
 $roboto-medium: 500;
 $roboto-bold: 700;
 $roboto-black: 900;
-
 // variables for colors
-
-$white:    #fff !default;
+$white : #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -35,30 +32,26 @@ $gray-600: #868e96 !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
-
+$black : #000 !default;
 // looping for text color class
 // $clrs: $gray-100 $gray-200 $gray-300 $gray-400;
-
 // @for $i from 1 through length($clrs) {
 //     .text-#{nth($clrs, $i)}{  
 //       color: nth($clrs, $i);
 //     }
 // }
-
 // general colors
 // theme colors
 $orange: #f94f22;
-
-
+$blue: rgb(87, 111, 158);
 // define theme color ( so that we just have to use $primary-color )
 $primary-color: $orange;
-
+$secondary-color: $blue;
 // defing class
-.primary-text-color{
-	color: $primary-color;
-}
-.primary-bkg-color{
-	background-color: $primary-color;
+.primary-text-color {
+    color: $primary-color;
 }
 
+.primary-bkg-color {
+    background-color: $primary-color;
+}
