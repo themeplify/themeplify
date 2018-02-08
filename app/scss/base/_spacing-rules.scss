@@ -1,0 +1,6 @@
+// between ul li and button
+ul{
+	& + .btn{
+		margin-top: rem(25);
+	}
+}

@@ -1,5 +1,5 @@
 //unchange -> color, font-weight, font-family
-$typo-look: ($roboto, $roboto-thin, #333) ($roboto, $roboto-light, #333) ($roboto, $roboto-light, red) ($roboto, $roboto-bold, #333) ($roboto, $roboto-regular, #333) ($roboto, $roboto-regular, #333);
+$typo-look: ($roboto, $roboto-thin, #333) ($roboto, $roboto-light, #333) ($roboto, $roboto-light, #333) ($roboto, $roboto-bold, #333) ($roboto, $roboto-regular, #333) ($roboto, $roboto-regular, #333);
 
 @each $font-family, $font-weight, $color in $typo-look {
 	$i: index(($typo-look), ($font-family, $font-weight, $color));
@@ -18,6 +18,7 @@ $typo-size: (rem(55), 1) (rem(42), 1) (rem(25), 1) (rem(20), 1.3) (rem(16), 1.2)
 	h#{$i}, .h#{$i} {
 		font-size: $font-size;
 		line-height: $line-height;
+		margin-bottom: rem(20);
 	}
 }
 
