@@ -1,0 +1,55 @@
+// Counter V2
+.counter-v2 {
+    .counter-col {
+        padding: 50px;
+        background: $primary-color;
+        color: #fff;
+        &:nth-child(2) {
+            background: darken($primary-color, 5%);
+        }
+        &:nth-child(3) {
+            background: darken($primary-color, 10%);
+        }
+        &:nth-child(4) {
+            background: darken($primary-color, 15%);
+        }
+        @include media-breakpoint-down(sm) {
+            padding: 25px 15px;
+        }
+    }
+}
+
+// blog V2
+.blog-v2 {
+    .post-holder {
+        position: relative;
+        .post-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 25px;
+            .post-meta {
+                i,
+                a,
+                span {
+                    vertical-align: middle;
+                    color: #fff;
+                }
+                .post-author,
+                .post-date {
+                    font-size: 14px;
+                }
+                .post-author {
+                    margin-right: 10px;
+                }
+            }
+            .post-title {
+                margin-top: 10px;
+                a {
+                    color: #fff;
+                }
+            }
+        }
+    }
+}

@@ -1,104 +1,172 @@
-header{
-	position: relative;
-	.header-nav{
-		position: absolute;
-		width: 100%;
-		top: 0;
-		left: 0;
-		min-height: 80px;
-		border-bottom: 1px solid #6b6865;
-		padding: 0;
-		.navbar-brand{
-			width: rem(160);
-		}
-		.navbar-nav{
-			.nav-item{
-				.nav-link{
-					color: $white;
-					text-transform: capitalize;
-					padding: rem(30) rem(15);
-					position: relative;
-					z-index: 9;
-					&:after{
-						height: 0px;
-						top: 0;
-						left: 0;
-						width: 100%;
-						content: '';
-						position: absolute;
-						background-color: $orange;
-						z-index: -1;
-						transition: all .3s;
-					}
-					&:hover{
-						&:after{
-							height: 100%;
-						}
-					}
-				}
-				&.active{
-					.nav-link{
-						&:after{
-							height: 100%;
-						}
-					}
-				}
-			}
-		}
-	}
+header {
+    position: relative;
+    .header-nav {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;
+        min-height: 80px;
+        border-bottom: 1px solid #6b6865;
+        padding: 0;
+        .navbar-brand {
+            width: rem(160);
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    color: $white;
+                    text-transform: capitalize;
+                    padding: rem(30) rem(15);
+                    position: relative;
+                    z-index: 9;
+                    &:after {
+                        height: 0px;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        content: '';
+                        position: absolute;
+                        background-color: $orange;
+                        z-index: -1;
+                        transition: all .3s;
+                    }
+                    &:hover {
+                        &:after {
+                            height: 100%;
+                        }
+                    }
+                }
+                &.active {
+                    .nav-link {
+                        color: $primary-color;
+                        &:after {
+                            height: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
+nav ul.navbar-nav li {
+    &.active a,
+    a:hover {
+        color: $primary-color;
+    }
+}
 
 .carousel-item {
-	height: 100vh;
-	min-height: 300px;
-	background: no-repeat center center scroll;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-  }
-  
-
-  // Carousel fade transition
-.carousel-fade {
-	.carousel-item {
-		display: block;
-		position: absolute;
-		opacity: 0;
-		transition: opacity .75s ease-in-out;
-
-		&.active {
-			opacity: 1;
-		}
-	}
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
+// Carousel fade transition
+.carousel-fade {
+    .carousel-item {
+        display: block;
+        position: absolute;
+        opacity: 0;
+        transition: opacity .75s ease-in-out;
+        &.active {
+            opacity: 1;
+        }
+    }
+}
 
- // Custom styles for this pen
-html, 
-body, 
+// Custom styles for this pen
+html,
+body,
 .carousel,
 .carousel-inner,
 .carousel-item {
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 }
 
 .carousel {
-  // position: absolute;
-  // top: 0;
-  // left: 0;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
 }
 
 .carousel-item {
-  &:nth-child(1) {
-    background-color: red;  
-  }
-  &:nth-child(2) {
-    background-color: blue;  
-  }
-  &:nth-child(3) {
-    background-color: yellow;  
-  }
+    &:nth-child(1) {
+        background-color: red;
+    }
+    &:nth-child(2) {
+        background-color: blue;
+    }
+    &:nth-child(3) {
+        background-color: yellow;
+    }
+}
+
+// nav animation
+nav.navbar {
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+}
+
+.hide-nav {
+    top: -100px;
+    transition-duration: .5s;
+    -webkit-transition-duration: .5s;
+    -moz-transition-duration: .5s;
+    -ms-transition-duration: .5s;
+    -o-transition-duration: .5s;
+}
+
+// nav color 
+.bg-dark,
+.bg-transparent {
+    .navbar-nav li {
+        a {
+            color: #fff;
+        }
+        a:hover,
+        &.active a {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+.bg-white,
+.transparent-bkg.bg-transparent {
+    box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+    .navbar-nav li {
+        a {
+            color: #232323;
+        }
+        &.active a,
+        a:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.transparent-bkg.bg-transparent {
+    background: #fff !important;
+}
+
+.dark-logo {
+    display: none;
+}
+
+.bg-white,
+.transparent-bkg.bg-transparent {
+    .light-logo {
+        display: none;
+    }
+    .dark-logo {
+        display: block;
+    }
 }

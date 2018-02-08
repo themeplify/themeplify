@@ -1,33 +1,36 @@
-.counter{
+.counter {
     background-image: url(../images/counter-background.jpg);
     background-color: rgba(0, 0, 0, 0.3);
     background-blend-mode: color;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    ul{
+    ul {
         list-style: none;
         text-align: center;
         margin: 0 auto;
         padding: 0;
-        color: #fff; 
-        li{
+        color: #fff;
+        li {
             display: inline-block;
             margin: 20px 45px;
-            span.lnr{
-                font-size: 45px;
-            }
-            .counter-number{
-                font-size: 50px;
-                font-weight: bold;
-                margin: 20px 0;
-                line-height: 42px;  
-            }
-            .counter-text{
-                font-size: 18px;
-                text-transform: uppercase;
-                margin: 0;
-            }
         }
     }
+}
+
+span.counter-icon {
+    font-size: 45px;
+}
+
+.counter-number {
+    font-size: 50px;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 42px;
+}
+
+.counter-text {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0;
 }
