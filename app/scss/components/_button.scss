@@ -2,73 +2,31 @@
 	cursor: pointer;
 	margin-bottom: rem(0);
 	margin-right: rem(15);
-	text-transform: capitalize;
 	min-width: rem(120);
 	border-radius: 0px;
-	// orange solid
-	&.btn-solid-orange{
-		background-color: $orange;
-		border: 1px solid transparent;
-		text-transform: capitalize;
+    text-transform: uppercase;
+    font-size: rem(16);
+    padding: 12px 20px;
+    line-height: 1;
+	&.btn-primary{
+		background: $primary;
+	}
+	&.btn-primary-white{
+	    background-color: $white;
+	    color: $gray-900;
+	    border: 2px solid $white;
+	    &:hover{
+	    	background-color: transparent;
+	    	color: $white;
+	    }
+	}
+	&.btn-outline-primary-white{
+		background: transparent;
+		border: 2px solid $white;
 		color: $white;
 		&:hover{
-			background-color: transparent;
-			border: 1px solid $orange;
-			color: $orange;
-		}
-		&.active{
-			background-color: transparent;
-			border: 1px solid $orange;
-			color: $orange;
-		}
-	}
-	//black Solid
-	&.btn-solid-black{
-		background-color: $black;
-		border: 1px solid transparent;
-		text-transform: capitalize;
-		color: $white;
-		&:hover{
-			background-color: transparent;
-			border: 1px solid $black;
-			color: $black;
-		}
-		&.active{
-			background-color: transparent;
-			border: 1px solid $black;
-			color: $black;
-		}
-	}
-	// orange outline
-	&.btn-outline-orange{
-		border-color: $orange;
-		color: $orange;
-		background-color: transparent;
-		&:hover{
-			border-color: transparent;
-			background-color: $orange;
-			color: $white;
-		}
-		&.active{
-			border-color: transparent;
-			background-color: $orange;
-			color: $white;
-		}
-	}
-	//black outline
-	&.btn-outline-black{
-		border-color: $black;
-		color: $black;
-		background-color: transparent;
-		&:hover{
-			border-color: transparent;
-			background-color: $black;
-			color: $white;
-		}
-		&.active{
-			border-color: transparent;
-			background-color: $black;
-			color: $white;
+			background-color: $white;
+			color: $gray-900;
 		}
 	}
 }

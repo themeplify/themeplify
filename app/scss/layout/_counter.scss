@@ -5,20 +5,40 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    &:after{
+        height: 100%;
+        width: 100%;
+        content: '';
+        top: 0;
+        left: 0;
+        background-color: rgba(40, 40, 40, .6);
+        position: absolute;
+    }
     ul{
         list-style: none;
         text-align: center;
         margin: 0 auto;
         padding: 0;
-        color: #fff; 
+        color: $white; 
+        position: relative;
+        z-index: 9;
         li{
             display: inline-block;
-            margin: 20px 45px;
+            margin: 20px 65px;
+            padding: 0;
+            @include media-breakpoint-down(lg){
+                margin: 20px 40px;
+            }
             span.lnr{
                 font-size: 45px;
             }
+            &:before{
+                display: none;
+            }
             .counter-number{
-                font-size: 50px;
+                font-size: rem(50);
                 font-weight: bold;
                 margin: 20px 0;
                 line-height: 42px;  

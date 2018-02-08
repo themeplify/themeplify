@@ -36,6 +36,12 @@ ul{
 // common classes
 .section-padding {
     padding: rem(100) 0;
+    @include media-breakpoint-down(lg){
+        padding: rem(70) 0;
+    }
+    @include media-breakpoint-down(md){
+        padding: rem(40) 0;
+    }
 }
 
 .bg-gray-200 {
@@ -91,4 +97,4 @@ p {
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     -o-transform: translateY(-50%);
-    }
+}

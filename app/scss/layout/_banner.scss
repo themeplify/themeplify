@@ -1,0 +1,32 @@
+.single-image-banner{
+	position: relative;
+	&:after{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		left: 0;
+		top: 0;
+		background-color: rgba(0, 0, 0, .6);
+		content: '';
+	}
+	.display-1{
+		font-weight: $roboto-black;
+		line-height: 1;
+		color: $white;
+	}
+	.display-4{
+		font-size: rem(20);
+		color: $white;
+	}
+	.banner-content-holder{
+		position: absolute;
+		z-index: 9;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		-webkit-transform: translate(-50%, -50%);
+		-moz-transform: translate(-50%, -50%);
+		-o-transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+	}
+}
