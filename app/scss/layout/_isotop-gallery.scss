@@ -1,0 +1,28 @@
+.isotop-gallery-holder{
+	.filter-btns{
+		text-align: center;
+		.btn{
+			padding: 8px 12px;
+			font-size: rem(13);
+			min-width: 90px;
+			margin-top: 0px;
+			&.btn-outline-primary-dark{
+			}
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
+	}
+	.list{
+		&.isotop-images-list{
+			li{
+				&.list__item{
+					width: 20%;
+				}
+				&:before{
+					display: none;
+				}
+			}
+		}
+	}
+}

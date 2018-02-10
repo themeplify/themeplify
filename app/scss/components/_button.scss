@@ -2,6 +2,7 @@
 	cursor: pointer;
 	margin-bottom: rem(0);
 	margin-right: rem(15);
+	margin-top: rem(30);
 	min-width: rem(120);
 	border-radius: 0px;
     text-transform: uppercase;
@@ -13,12 +14,21 @@
 	}
 	&.btn-primary-white{
 	    background-color: $white;
-	    color: $gray-900;
+	    color: $gray-dark;
 	    border: 2px solid $white;
 	    &:hover{
 	    	background-color: transparent;
 	    	color: $white;
 	    }
+	}
+	&.btn-primary-dark{
+		color: $white;
+		background-color: $gray-dark;
+		border: 2px solid $gray-dark;
+		&:hover{
+			background-color: transparent;
+			color: $gray-dark;
+		}
 	}
 	&.btn-outline-primary-white{
 		background: transparent;
@@ -26,7 +36,16 @@
 		color: $white;
 		&:hover{
 			background-color: $white;
-			color: $gray-900;
+			color: $gray-dark;
+		}
+	}
+	&.btn-outline-primary-dark{
+		background-color: transparent;
+		border: 2px solid $gray-dark;
+		color: $gray-dark;
+		&:hover{
+			background: $gray-dark;
+			color: $white;
 		}
 	}
 }

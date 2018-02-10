@@ -6,10 +6,26 @@
 		right: 0;
 		top: 0;
 		width: 50%;
+		height: 100%;
+		object-fit:cover;
+		overflow: hidden;
+	}
+	.who-we-are-main-img-2{
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		object-fit:cover;
 		overflow: hidden;
 	}
 	.who-we-are-content{
-		padding-right: rem(120);
+		&.who-we-are-content-left{
+			padding-right: rem(120);
+		}
+		&.who-we-are-content-right{
+			padding-left: rem(120);
+		}
 		.abt-sign{
 			margin-top: rem(40);
 		}
