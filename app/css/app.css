@@ -8799,12 +8799,21 @@ p:last-of-type {
   float: none;
   margin: 0 auto; }
 
-.common-transition, .what-we-offer-v2 .offer-box {
+.common-transition, .what-we-offer-v2 .offer-box, .isotop-gallery-holder .list.isotop-images-list li:after, .isotop-gallery-holder .list.isotop-images-list li img, .isotop-gallery-holder .list.isotop-images-list li .portfolio-desprition {
   transition: all .5s;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
   -ms-transition: all .5s;
   -o-transition: all .5s; }
+
+.transateXY-center, .isotop-gallery-holder .list.isotop-images-list li .portfolio-desprition {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%); }
 
 .transateX-center {
   left: 50%;
@@ -8856,32 +8865,32 @@ h5, .h5 {
 h1, .h1 {
   font-size: 3.4375rem;
   line-height: 1;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0.625rem; }
 
 h2, .h2 {
   font-size: 2.625rem;
   line-height: 1;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0.625rem; }
 
 h3, .h3 {
   font-size: 1.5625rem;
   line-height: 1;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0.625rem; }
 
 h4, .h4 {
   font-size: 1.25rem;
   line-height: 1.3;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0.625rem; }
 
 h5, .h5 {
   font-size: 1rem;
   line-height: 1.2;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0.625rem; }
 
 h6, .h6 {
   font-size: 0.9375rem;
   line-height: 1.2;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0.625rem; }
 
 p, .body-copy {
   font-size: 1rem;
@@ -9536,14 +9545,54 @@ span.counter-icon {
     font-size: 0.8125rem;
     min-width: 90px;
     margin-top: 0px; }
+    .isotop-gallery-holder .filter-btns .btn.is-active {
+      background: #252525;
+      color: #fff; }
     .isotop-gallery-holder .filter-btns .btn:last-child {
       margin-right: 0px; }
 
-.isotop-gallery-holder .list.isotop-images-list li.list__item {
-  width: 20%; }
-
-.isotop-gallery-holder .list.isotop-images-list li:before {
-  display: none; }
+.isotop-gallery-holder .list.isotop-images-list {
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 40px; }
+  .isotop-gallery-holder .list.isotop-images-list li {
+    margin: 15px;
+    padding: 0;
+    position: relative;
+    overflow: hidden; }
+    .isotop-gallery-holder .list.isotop-images-list li.list__item {
+      width: 30%; }
+    .isotop-gallery-holder .list.isotop-images-list li:before {
+      display: none; }
+    .isotop-gallery-holder .list.isotop-images-list li:after {
+      position: absolute;
+      content: '';
+      height: 100%;
+      width: 100%;
+      background-color: transparent;
+      top: 0;
+      left: 0; }
+    .isotop-gallery-holder .list.isotop-images-list li:hover:after {
+      background-color: rgba(0, 0, 0, 0.5); }
+    .isotop-gallery-holder .list.isotop-images-list li:hover img {
+      -moz-transform: scale(1.1);
+      -webkit-transform: scale(1.1);
+      -o-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+      transform: scale(1.1); }
+    .isotop-gallery-holder .list.isotop-images-list li:hover .portfolio-desprition {
+      display: block;
+      margin-top: 0px;
+      opacity: 1; }
+    .isotop-gallery-holder .list.isotop-images-list li .portfolio-desprition {
+      position: absolute;
+      color: #fff;
+      z-index: 99;
+      width: 60%;
+      margin-top: 50px;
+      opacity: 0; }
+      .isotop-gallery-holder .list.isotop-images-list li .portfolio-desprition h4 {
+        color: #fff; }
 
 .btn {
   cursor: pointer;

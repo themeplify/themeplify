@@ -18,7 +18,7 @@ $typo-size: (rem(55), 1) (rem(42), 1) (rem(25), 1) (rem(20), 1.3) (rem(16), 1.2)
 	h#{$i}, .h#{$i} {
 		font-size: $font-size;
 		line-height: $line-height;
-		margin-bottom: rem(20);
+		margin-bottom: rem(10);
 	}
 }
 

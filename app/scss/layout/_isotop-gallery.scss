@@ -8,6 +8,10 @@
 			margin-top: 0px;
 			&.btn-outline-primary-dark{
 			}
+			&.is-active{
+				background: $gray-dark;
+				color: $white;
+			}
 			&:last-child{
 				margin-right: 0px;
 			}
@@ -15,12 +19,62 @@
 	}
 	.list{
 		&.isotop-images-list{
+			margin-left: -15px;
+			margin-right: -15px;
+			margin-top: 40px;
 			li{
+				margin:15px;
+				padding: 0;
+				position: relative;
+				overflow: hidden;
 				&.list__item{
-					width: 20%;
+					width: 30%;
 				}
 				&:before{
 					display: none;
+				}
+				&:after{
+					position: absolute;
+					content: '';
+					height: 100%;
+					width: 100%;
+					background-color: rgba(0,0,0,0);
+					top: 0;
+					left: 0;
+					@extend .common-transition;
+				}
+				img{
+					@extend .common-transition;
+				}
+				&:hover{
+					&:after{
+						background-color: rgba(0,0,0,.5);
+					}
+					img{
+						-moz-transform: scale(1.1);
+						-webkit-transform: scale(1.1);
+						-o-transform: scale(1.1);
+						-ms-transform: scale(1.1);
+						transform: scale(1.1);
+					}
+					.portfolio-desprition{
+						display: block;
+						margin-top: 0px;
+						opacity:1;
+					}
+				}
+				.portfolio-desprition{
+					position: absolute;
+					@extend .transateXY-center;
+					@extend .common-transition;
+					color: $white;
+					z-index: 99;
+					width: 60%;
+					margin-top: 50px;
+					opacity: 0;
+					h4{
+						color: $white;
+					}
 				}
 			}
 		}
