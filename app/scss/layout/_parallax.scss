@@ -1,7 +1,8 @@
 .parallax-section{
-	background: url(../images/parallax.jpg);
+	background-image: url(../images/parallax-bg.jpg);
 	position: relative;
-	background-position: fixed;
+	background-attachment: fixed;
+	background-position: center center;
 	&:after{
 		position: absolute;
 		height: 100%;

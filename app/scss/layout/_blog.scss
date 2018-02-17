@@ -1,37 +1,46 @@
 .blog{
-    .post-img{
-        position: relative;
-        .post-info{
-            position: absolute;
-            top: 0;
-            right: 25px;
-            color: $white;
-            font-size: 30px;
-            text-align: center;
-            line-height: 35px;
-            padding: 25px 8px;
-            span{
-                display: block;
-            }
-            &:after{
-                content: '';
+    .blog-holder{
+        background-color: $white;
+        box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+        -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+        -moz-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+        -o-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+        -ms-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
+        overflow: hidden;
+        .post-img{
+            position: relative;
+            .post-info{
                 position: absolute;
-                bottom: 0;
+                top: 0;
+                right: 25px;
+                color: $white;
+                font-size: 30px;
+                text-align: center;
+                line-height: 35px;
+                padding: 25px 8px;
+                span{
+                    display: block;
+                }
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
 
+                }
             }
         }
-    }
-    .post-title{
-        margin: 22px 0 15px;
-        h2{
-            font-size: 25px;
-            margin: 0;
+        .post-title{
+            margin: 22px 0 15px;
+            h2{
+                font-size: 25px;
+                margin: 0;
+            }
         }
-    }
-    .post-text{
-        margin-bottom: 20px;
-    }
-    .post-more{
-        
+        .post-text{
+            margin-bottom: 20px;
+        }
+        .post-more{
+            
+        }
     }
 }
