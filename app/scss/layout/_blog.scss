@@ -11,15 +11,27 @@
             position: relative;
             .post-info{
                 position: absolute;
-                top: 0;
-                right: 25px;
                 color: $white;
-                font-size: 30px;
                 text-align: center;
-                line-height: 35px;
-                padding: 25px 8px;
+                height: 60px;
+                width: 60px;
+                border-radius: 50%;
+                right: 20px;
+                bottom: -30px;
+                font-size: rem(16);
+                line-height: 50px;
+                box-shadow: 0px 0px 30px red;
+                -webkit-box-shadow: 0px 0px 30px red;
+                -moz-box-shadow: 0px 0px 30px red;
+                -o-box-shadow: 0px 0px 30px red;
+                -ms-box-shadow: 0px 0px 30px red;
+                p{
+                    position: absolute;
+                    @extend .transateXY-center;
+                }
                 span{
                     display: block;
+                    line-height: 1;
                 }
                 &:after{
                     content: '';
@@ -29,18 +41,19 @@
                 }
             }
         }
-        .post-title{
-            margin: 22px 0 15px;
-            h2{
-                font-size: 25px;
-                margin: 0;
+        .blog-description{
+            padding: 20px 25px;
+            .post-title{
+                max-width: 83%;
+                a{
+                    color: $gray-800;
+                }
             }
-        }
-        .post-text{
-            margin-bottom: 20px;
-        }
-        .post-more{
-            
+            .post-more{
+                .btn{
+                    margin-bottom: 15px;
+                }
+            }
         }
     }
 }

@@ -1,0 +1,16 @@
+.clients-holder{
+	ul{
+		margin-top: 0px;
+		li{
+			display: inline-block;    
+			width: 19.5%;
+    		padding-left: 20px;
+    		&:first-child{
+    			padding-left: 0px;
+    		}
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
