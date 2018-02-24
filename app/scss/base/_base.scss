@@ -29,23 +29,23 @@ p a:hover {
     text-decoration: none;
 }
 
-ul{
-	margin: 0;
-	padding: 0;
+ul {
+    margin: 0;
+    padding: 0;
 }
 
 // common classes
 .section-padding {
     padding: rem(120) 0;
-    @include media-breakpoint-down(lg){
+    @include media-breakpoint-down(lg) {
         padding: rem(70) 0;
     }
-    @include media-breakpoint-down(md){
+    @include media-breakpoint-down(md) {
         padding: rem(40) 0;
     }
 }
 
-.bg-light{
+.bg-light {
     background-color: $gray-200;
     color: $gray-dark;
 }
@@ -54,13 +54,15 @@ ul{
     background-color: $orange;
     color: $white;
 }
-.bg-dark{
+
+.bg-dark {
     background-color: $gray-dark;
     color: $white;
-    h2{
+    h2 {
         color: $white;
     }
 }
+
 .section-sub-title {
     max-width: 60%;
     margin: 0 auto;
@@ -73,23 +75,24 @@ p {
     }
 }
 
-
-.bg-gray-700{
-	background-color: $gray-700;
+.bg-gray-700 {
+    background-color: $gray-700;
 }
 
-.center-div{
+.center-div {
     float: none;
     margin: 0 auto;
 }
-.common-transition{
+
+.common-transition {
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -ms-transition: all .5s;
     -o-transition: all .5s;
 }
-.transateXY-center{
+
+.transateXY-center {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -98,7 +101,8 @@ p {
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
 }
-.transateX-center{
+
+.transateX-center {
     left: 50%;
     transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
@@ -106,10 +110,10 @@ p {
     -ms-transform: translateX(-50%);
     -o-transform: translateX(-50%);
 }
-.transateY-center{
+
+.transateY-center {
     top: 50%;
     transform: translateY(-50%);
-    transform: transalteY(-50%);
     -webkit-transform: translateY(-50%);
     -moz-transform: translateY(-50%);
     -ms-transform: translateY(-50%);

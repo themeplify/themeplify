@@ -35,13 +35,8 @@ header {
                             height: 100%;
                         }
                     }
-                }
-                &.active {
-                    .nav-link {
+                    &.active {
                         color: $primary-color;
-                        &:after {
-                            height: 100%;
-                        }
                     }
                 }
             }
@@ -145,10 +140,10 @@ nav.navbar {
     .navbar-nav li {
         a {
             color: #232323;
-        }
-        &.active a,
-        a:hover {
-            color: $primary-color;
+            &.active,
+            &:hover {
+                color: $primary-color;
+            }
         }
     }
 }
@@ -168,5 +163,25 @@ nav.navbar {
     }
     .dark-logo {
         display: block;
+    }
+}
+
+#to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 9px 0 0;
+    text-align: center;
+    transition: all 0.3s;
+    display: none;
+    &:hover {
+        background: rgba(0, 0, 0, 1);
+        padding-top: 7px;
     }
 }
