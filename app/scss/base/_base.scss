@@ -38,6 +38,10 @@ ul {
 }
 
 // common classes
+
+.animatedParent{
+    overflow: hidden;
+}
 .section-padding {
     padding: rem(120) 0;
     @include media-breakpoint-down(lg) {

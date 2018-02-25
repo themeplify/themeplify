@@ -1,5 +1,8 @@
 .single-image-banner{
 	position: relative;
+	img{
+		width: 100%;
+	}
 	&:after{
 		position: absolute;
 		height: 100%;
@@ -9,20 +12,66 @@
 		background-color: rgba(0, 0, 0, .6);
 		content: '';
 	}
-	.display-1{
-		font-weight: $roboto-black;
-		line-height: 1;
-		color: $white;
-	}
-	.display-4{
-		font-size: rem(20);
-		color: $white;
-	}
 	.banner-content-holder{
 		position: absolute;
 		z-index: 9;
 		width: 1140px;
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 100%;
 		text-align: left;
 		@extend .transateXY-center;
+		@include media-breakpoint-down(lg){
+			max-width: 960px;
+		}
+		@include media-breakpoint-down(md){
+			width: 720px;
+			padding: 0;
+			.btn{
+				margin-top: rem(15);
+			}
+		}
+		@include media-breakpoint-down(sm){
+			width: 540px;
+		}
+		@include media-breakpoint-down(xs){
+			width: 100%;
+			padding-left: 15px;
+			padding-right: 15px;
+			margin-top: 15px;
+			.btn{
+				margin-top: 8px;
+				font-size: rem(12);
+			}
+		}
+		.display-1{
+			font-weight: $roboto-black;
+			line-height: 1;
+			color: $white;
+			@include media-breakpoint-down(lg){
+				font-size: rem(75);
+			}
+			@include media-breakpoint-down(md){
+				font-size: rem(55);
+			}
+			@include media-breakpoint-down(sm){
+				font-size: rem(40);
+			}
+			@include media-breakpoint-down(xs){
+				font-size: rem(25);
+				margin-bottom: 5px;
+			}
+		}
+		.display-4{
+			font-size: rem(20);
+			color: $white;
+			@include media-breakpoint-down(sm){
+				font-size: rem(16);
+			}
+			@include media-breakpoint-down(xs){
+				font-size: rem(14);
+				margin-bottom: 5px;
+			}
+		}
 	}
 }
