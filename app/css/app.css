@@ -8736,6 +8736,9 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden; }
+  @media (max-width: 767px) {
+    body {
+      font-size: 0.9375rem; } }
 
 img {
   max-width: 100%; }
@@ -8789,6 +8792,13 @@ ul {
   max-width: 60%;
   margin: 0 auto;
   margin-bottom: 3.125rem !important; }
+  @media (max-width: 1199px) {
+    .section-sub-title {
+      max-width: 80%; } }
+  @media (max-width: 991px) {
+    .section-sub-title {
+      max-width: 100%;
+      margin-bottom: 1.875rem !important; } }
 
 p:last-of-type {
   margin-bottom: 0; }
@@ -8896,6 +8906,10 @@ p, .body-copy {
   font-size: 1rem;
   margin-bottom: 1.5625rem;
   line-height: 1.5; }
+  @media (max-width: 767px) {
+    p, .body-copy {
+      font-size: 0.9375rem;
+      margin-bottom: 0.75rem; } }
 
 .text-large {
   font-size: 1.125rem;
@@ -8905,6 +8919,32 @@ p, .body-copy {
   font-size: 0.875rem;
   margin-bottom: 0.0625rem; }
 
+@media (max-width: 1199px) {
+  h2 {
+    font-size: 2.5rem;
+    line-height: 2.8125rem; } }
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 2.1875rem;
+    line-height: 2.5rem; } }
+
+@media (max-width: 767px) {
+  h2 {
+    font-size: 2rem;
+    line-height: 2.3125rem; } }
+
+@media (max-width: 575px) {
+  h2 {
+    font-size: 1.6875rem;
+    line-height: 2rem; } }
+
+@media (max-width: 991px) {
+  h4 {
+    font-size: 1.0625rem;
+    line-height: 1.25rem;
+    margin-bottom: 0.3125rem; } }
+
 main ul {
   margin-top: 20px; }
   main ul li {
@@ -8912,15 +8952,20 @@ main ul {
     list-style: none;
     padding-left: 1.875rem;
     padding-bottom: 0.625rem; }
+    @media (max-width: 767px) {
+      main ul li {
+        padding-bottom: 0.1875rem;
+        padding-left: 1.5625rem; } }
     main ul li:before {
       position: absolute;
       top: -2px;
       left: 0;
       content: "\f00c";
       font-family: 'FontAwesome'; }
-
-ul + .btn {
-  margin-top: 1.5625rem; }
+      @media (max-width: 767px) {
+        main ul li:before {
+          font-size: 0.75rem;
+          top: 2px; } }
 
 header {
   position: relative; }
@@ -9162,6 +9207,18 @@ footer .bottom-footer {
 .who-we-are {
   position: relative;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .who-we-are:after {
+      position: absolute;
+      height: 100%;
+      content: '';
+      left: 0;
+      top: 0;
+      width: 100%; }
+    .who-we-are.bg-dark:after {
+      background: rgba(249, 79, 34, 0.8); }
+    .who-we-are.bg-light:after {
+      background: rgba(255, 255, 255, 0.8); } }
   .who-we-are .who-we-are-main-img {
     position: absolute;
     right: 0;
@@ -9170,6 +9227,9 @@ footer .bottom-footer {
     height: 100%;
     object-fit: cover;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .who-we-are .who-we-are-main-img {
+        width: 100%; } }
   .who-we-are .who-we-are-main-img-2 {
     position: absolute;
     left: 0;
@@ -9178,12 +9238,30 @@ footer .bottom-footer {
     height: 100%;
     object-fit: cover;
     overflow: hidden; }
-  .who-we-are .who-we-are-content.who-we-are-content-left {
-    padding-right: 7.5rem; }
-  .who-we-are .who-we-are-content.who-we-are-content-right {
-    padding-left: 7.5rem; }
-  .who-we-are .who-we-are-content .abt-sign {
-    margin-top: 2.5rem; }
+    @media (max-width: 767px) {
+      .who-we-are .who-we-are-main-img-2 {
+        width: 100%; } }
+  .who-we-are .who-we-are-content {
+    position: relative;
+    z-index: 99; }
+    .who-we-are .who-we-are-content.who-we-are-content-left {
+      padding-right: 7.5rem; }
+      @media (max-width: 1199px) {
+        .who-we-are .who-we-are-content.who-we-are-content-left {
+          padding-right: 1.25rem; } }
+      @media (max-width: 767px) {
+        .who-we-are .who-we-are-content.who-we-are-content-left {
+          padding-right: 0; } }
+    .who-we-are .who-we-are-content.who-we-are-content-right {
+      padding-left: 7.5rem; }
+      @media (max-width: 1199px) {
+        .who-we-are .who-we-are-content.who-we-are-content-right {
+          padding-left: 1.25rem; } }
+      @media (max-width: 767px) {
+        .who-we-are .who-we-are-content.who-we-are-content-right {
+          padding-left: 0; } }
+    .who-we-are .who-we-are-content .abt-sign {
+      margin-top: 2.5rem; }
 
 .who-we-are-v2 img {
   -webkit-box-shadow: 9px 10px 31px -6px dimgray;
@@ -9198,6 +9276,13 @@ footer .bottom-footer {
 
 .why-choose-us .left-why-choose-us-centent {
   padding-right: 7.5rem; }
+  @media (max-width: 1199px) {
+    .why-choose-us .left-why-choose-us-centent {
+      padding-right: 1.25rem; } }
+  @media (max-width: 767px) {
+    .why-choose-us .left-why-choose-us-centent {
+      padding-right: 0;
+      margin-bottom: 1.875rem; } }
 
 .parallax-section {
   background-image: url(../images/parallax-bg.jpg);
@@ -9423,8 +9508,13 @@ span.counter-icon {
   -o-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
   -ms-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
   overflow: hidden; }
+  @media (max-width: 991px) {
+    .blog .blog-holder {
+      margin-bottom: 1.5625rem; } }
   .blog .blog-holder .post-img {
     position: relative; }
+    .blog .blog-holder .post-img img {
+      width: 100%; }
     .blog .blog-holder .post-img .post-info {
       position: absolute;
       color: #fff;
@@ -9435,12 +9525,7 @@ span.counter-icon {
       right: 20px;
       bottom: -30px;
       font-size: 1rem;
-      line-height: 50px;
-      box-shadow: 0px 0px 30px red;
-      -webkit-box-shadow: 0px 0px 30px red;
-      -moz-box-shadow: 0px 0px 30px red;
-      -o-box-shadow: 0px 0px 30px red;
-      -ms-box-shadow: 0px 0px 30px red; }
+      line-height: 50px; }
       .blog .blog-holder .post-img .post-info p {
         position: absolute; }
       .blog .blog-holder .post-img .post-info span {
@@ -9469,7 +9554,8 @@ span.counter-icon {
     height: 100%;
     width: 50%; }
     .contact-holder .map-holder iframe {
-      height: 100%; }
+      height: 100%;
+      width: 100%; }
   .contact-holder .contact-form-holder {
     padding-left: 7.5rem; }
 
@@ -9669,6 +9755,11 @@ span.counter-icon {
   font-size: 1rem;
   padding: 12px 20px;
   line-height: 1; }
+  @media (max-width: 767px) {
+    .btn {
+      font-size: 0.875rem;
+      padding: 0.625rem 0.9375rem;
+      margin-top: 1.25rem; } }
   .btn.btn-primary {
     background: #007bff; }
   .btn.btn-primary-white {

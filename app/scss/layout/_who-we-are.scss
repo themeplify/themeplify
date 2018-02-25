@@ -1,6 +1,26 @@
 .who-we-are{
 	position: relative;
 	overflow: hidden;
+	@include media-breakpoint-down(sm){
+		&:after{
+			position: absolute;
+			height: 100%;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 100%;
+		}
+		&.bg-dark{
+			&:after{
+				background: rgba(249,79,34, .8);
+			}
+		}
+		&.bg-light{
+			&:after{
+				background: rgba(255,255,255, .8);
+			}
+		}
+	}
 	.who-we-are-main-img{
 		position: absolute;
 		right: 0;
@@ -9,6 +29,9 @@
 		height: 100%;
 		object-fit:cover;
 		overflow: hidden;
+		@include media-breakpoint-down(sm){
+			width: 100%;
+		}
 	}
 	.who-we-are-main-img-2{
 		position: absolute;
@@ -18,13 +41,30 @@
 		height: 100%;
 		object-fit:cover;
 		overflow: hidden;
+		@include media-breakpoint-down(sm){
+			width: 100%;
+		}
 	}
 	.who-we-are-content{
+		position: relative;
+		z-index: 99;
 		&.who-we-are-content-left{
 			padding-right: rem(120);
+			@include media-breakpoint-down(lg){
+				padding-right: rem(20);
+			}
+			@include media-breakpoint-down(sm){
+				padding-right: 0;
+			}
 		}
 		&.who-we-are-content-right{
 			padding-left: rem(120);
+			@include media-breakpoint-down(lg){
+				padding-left: rem(20);
+			}
+			@include media-breakpoint-down(sm){
+				padding-left: 0;
+			}
 		}
 		.abt-sign{
 			margin-top: rem(40);

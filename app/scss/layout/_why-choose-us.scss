@@ -1,5 +1,12 @@
 .why-choose-us{
 	.left-why-choose-us-centent{
 		padding-right: rem(120);
+		@include media-breakpoint-down(lg){
+			padding-right: rem(20);
+		}
+		@include media-breakpoint-down(sm){
+			padding-right: 0;
+			margin-bottom: rem(30);
+		}
 	}
 }
