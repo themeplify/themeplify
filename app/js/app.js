@@ -41,18 +41,23 @@
         if (st > lastScroll) {
             $('nav.navbar').addClass('hide-nav');
             lastScroll = st;
+            if ($('header').hasClass('show-white-nav')) {
+                $('header').removeClass('show-white-nav');
+            }
         } else {
             $('nav.navbar').removeClass('hide-nav');
             lastScroll = st;
+            if ($('nav.navbar').hasClass('bg-transparent')) {
+                $('header').addClass('show-white-nav');
+            } else {
+                $('header').removeClass('show-white-nav');
+            }
         }
-        // transparent case
-        if ($('nav.navbar').hasClass('bg-transparent') && st > 0) {
-            $('nav.navbar').addClass('transparent-bkg');
-        } else {
-            $('nav.navbar').removeClass('transparent-bkg');
+        if (st == 0) {
+            $('header').removeClass('show-white-nav');
         }
-    }
 
+    }
 
 
 })(jQuery);
