@@ -39,7 +39,7 @@ header {
                     display: none;
                 }
                 @include media-breakpoint-down(sm){
-                    width: 150px;
+                    width: 100px;
                 }
             }
             .navbar-toggler{
@@ -48,6 +48,9 @@ header {
                 border: 2px solid $primary-color;
                 border-radius: 0px;
                 padding: rem(5) rem(8);
+                @include media-breakpoint-down(sm){
+                    padding: 1px 3px;
+                }
             }
             .navbar-collapse{
                 @include media-breakpoint-down(md){

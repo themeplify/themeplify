@@ -8994,7 +8994,7 @@ header nav.navbar .navbar-brand .dark-logo {
 
 @media (max-width: 767px) {
   header nav.navbar .navbar-brand {
-    width: 150px; } }
+    width: 100px; } }
 
 header nav.navbar .navbar-toggler {
   background-color: transparent;
@@ -9002,6 +9002,9 @@ header nav.navbar .navbar-toggler {
   border: 2px solid #f94f22;
   border-radius: 0px;
   padding: 0.3125rem 0.5rem; }
+  @media (max-width: 767px) {
+    header nav.navbar .navbar-toggler {
+      padding: 1px 3px; } }
 
 @media (max-width: 991px) {
   header nav.navbar .navbar-collapse {
@@ -9049,6 +9052,9 @@ header nav.navbar .navbar-nav .nav-item .nav-link {
 footer .section-padding {
   padding-bottom: 60px; }
 
+footer .top-footer {
+  margin-bottom: 132px; }
+
 footer .social-icons ul li {
   display: inline-block;
   margin-right: 0.625rem; }
@@ -9058,7 +9064,7 @@ footer .social-icons ul li {
     display: block;
     color: #fff;
     border-radius: 50%;
-    background-color: #212529;
+    background-color: #495057;
     text-align: center;
     line-height: 1.875rem; }
 
@@ -9069,9 +9075,15 @@ footer address {
 
 footer .bottom-footer {
   border-top: 1px solid #ced4da;
-  padding: 30px 0px; }
+  padding: 30px 0px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #212529;
+  z-index: -1; }
   footer .bottom-footer p.text-small {
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #fff; }
 
 .what-we-offer {
   position: relative; }
@@ -9526,8 +9538,19 @@ input.form-control {
     .contact-holder .map-holder iframe {
       height: 100%;
       width: 100%; }
+    @media (max-width: 767px) {
+      .contact-holder .map-holder {
+        width: 100%;
+        height: 250px; } }
   .contact-holder .contact-form-holder {
     padding-left: 7.5rem; }
+    @media (max-width: 1199px) {
+      .contact-holder .contact-form-holder {
+        padding-left: 1.25rem; } }
+    @media (max-width: 767px) {
+      .contact-holder .contact-form-holder {
+        padding-left: 0px;
+        padding-top: 235px; } }
 
 .team-v2 .each-team-member {
   text-align: center;
@@ -9569,6 +9592,8 @@ input.form-control {
     padding-right: 15px;
     max-width: 100%;
     text-align: left; }
+    .single-image-banner .banner-content-holder .btn:last-child {
+      margin-right: 0px; }
     @media (max-width: 1199px) {
       .single-image-banner .banner-content-holder {
         max-width: 960px; } }
@@ -9589,7 +9614,9 @@ input.form-control {
         margin-top: 15px; }
         .single-image-banner .banner-content-holder .btn {
           margin-top: 8px;
-          font-size: 0.75rem; } }
+          font-size: 0.75rem;
+          padding: 5px 8px;
+          margin-right: 0.625rem; } }
     .single-image-banner .banner-content-holder .display-1 {
       font-weight: 900;
       line-height: 1;
@@ -9606,7 +9633,7 @@ input.form-control {
       @media (max-width: 575px) {
         .single-image-banner .banner-content-holder .display-1 {
           font-size: 1.5625rem;
-          margin-bottom: 5px; } }
+          margin-bottom: 0; } }
     .single-image-banner .banner-content-holder .display-4 {
       font-size: 1.25rem;
       color: #fff; }
@@ -9616,7 +9643,7 @@ input.form-control {
       @media (max-width: 575px) {
         .single-image-banner .banner-content-holder .display-4 {
           font-size: 0.875rem;
-          margin-bottom: 5px; } }
+          margin-bottom: 3px; } }
 
 .counter-v2 .counter-col {
   padding: 50px;
@@ -9850,6 +9877,7 @@ form {
       color: inherit;
       padding: 8px 15px;
       resize: none;
+      font-size: 0.875rem;
       transition: all 0.3s; }
       form .form-group .form-control::-webkit-input-placeholder {
         /* Chrome/Opera/Safari */
