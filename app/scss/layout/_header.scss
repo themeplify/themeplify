@@ -1,8 +1,46 @@
 header {
+    &.show-white-nav{
+         box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+         nav{
+            &.bg-transparent{
+                background-color: $white !important;
+            }
+            &.navbar{
+                transition-duration: .5s;
+                -webkit-transition-duration: .5s;
+                -moz-transition-duration: .5s;
+                -ms-transition-duration: .5s;
+                -o-transition-duration: .5s;
+                .navbar-brand{
+                    .light-logo {
+                        display: none;
+                    }
+                    .dark-logo {
+                        display: block;
+                    }
+                }
+                .navbar-toggler{
+                    color: $black;
+                }
+                .navbar-nav{
+                    .nav-item{
+                        .nav-link{
+                            color: $black;
+                        }
+                    }
+                }
+            }
+         }
+    }
     nav{
         &.navbar{
             .navbar-brand{
-
+                .dark-logo {
+                    display: none;
+                }
+                @include media-breakpoint-down(sm){
+                    width: 150px;
+                }
             }
             .navbar-toggler{
                 background-color: transparent;
@@ -34,80 +72,10 @@ header {
                     }
                 }
             }
-            &.transparent-bkg{
-                .navbar-nav{
-                     .nav-item{
-                        .nav-link{
-                            color: $black;
-                            &:hover, &.active{
-                                color: $primary-color;
-                            }
-                        }
-                     }
-                }
-            }
         }
     }
 }
 
-
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
-
-// Carousel fade transition
-.carousel-fade {
-    .carousel-item {
-        display: block;
-        position: absolute;
-        opacity: 0;
-        transition: opacity .75s ease-in-out;
-        &.active {
-            opacity: 1;
-        }
-    }
-}
-
-// Custom styles for this pen
-.carousel,
-.carousel-inner,
-.carousel-item {
-    width: 100%;
-    height: 100%;
-}
-
-.carousel {
-    // position: absolute;
-    // top: 0;
-    // left: 0;
-}
-
-.carousel-item {
-    &:nth-child(1) {
-        background-color: red;
-    }
-    &:nth-child(2) {
-        background-color: blue;
-    }
-    &:nth-child(3) {
-        background-color: yellow;
-    }
-}
-
-// nav animation
-nav.navbar {
-    transition-duration: .5s;
-    -webkit-transition-duration: .5s;
-    -moz-transition-duration: .5s;
-    -ms-transition-duration: .5s;
-    -o-transition-duration: .5s;
-}
 
 .hide-nav {
     top: -100px;
@@ -116,52 +84,6 @@ nav.navbar {
     -moz-transition-duration: .5s;
     -ms-transition-duration: .5s;
     -o-transition-duration: .5s;
-}
-
-// nav color 
-.bg-dark,
-.bg-transparent {
-    .navbar-nav li {
-        a {
-            color: #fff;
-        }
-        a:hover,
-        &.active a {
-            color: rgba(255, 255, 255, 0.7);
-        }
-    }
-}
-
-.bg-white,
-.show-white-nav .bg-transparent {
-    box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
-    .navbar-nav li {
-        a {
-            color: #232323;
-            &.active,
-            &:hover {
-                color: $primary-color;
-            }
-        }
-    }
-}
-
-.show-white-nav .bg-transparent {
-    background: #fff !important;
-}
-
-.dark-logo {
-    display: none;
-}
-
-.bg-white,
-.show-white-nav .bg-transparent {
-    .light-logo {
-        display: none;
-    }
-    .dark-logo {
-        display: block;
-    }
 }
 
 #to-top {
