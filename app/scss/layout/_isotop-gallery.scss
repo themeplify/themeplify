@@ -6,7 +6,6 @@
             font-size: rem(13);
             min-width: 90px;
             margin-top: 0px;
-            &.btn-outline-primary-dark {}
             &.is-active {
                 background: $gray-dark;
                 color: $white;
@@ -51,13 +50,12 @@
                     top: 0;
                     left: 0;
                     color: #fff;
-                    z-index: 99;
+                    z-index: 1;
+                    height: 100%;
                     width: 100%;
                     margin-top: 0;
                     opacity: 0;
                     text-align: center;
-                    height: 100%;
-                    padding: 25px;
                     &:after,
                     &:before {
                         content: '';
@@ -119,6 +117,34 @@
                             width: 80px;
                             height: 80px;
                         }
+                    }
+                }
+                @include media-breakpoint-down(md) {
+                    margin: 10px;
+                }
+                @include media-breakpoint-down(sm) {
+                    margin: 10px;
+                    &.list__item {
+                        width: 46%;
+                    }
+                    .portfolio-desprition {
+                        display: block;
+                        opacity: 1;
+                        &::after,
+                        &::before {
+                            opacity: 1;
+                            width: 60px;
+                            height: 60px;
+                        }
+                    }
+                    &:after {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+                @include media-breakpoint-down(xs) {
+                    margin: 10px 5%;
+                    &.list__item {
+                        width: 90%;
                     }
                 }
             }
