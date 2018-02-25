@@ -1,36 +1,53 @@
-.what-we-offer{
-	position: relative;
-	.offer-side-image{
-		position: absolute;
-		&.keyboard-img{
-			right: 0;
-			top: 0;
-		}
-		&.pen-img{
-			top: 50px;
-			left: 50px;
-		}
-		&.cup-img{
-			bottom: 0px;
-			left: 50px;
-		}
-	}
-	.offer-box-holder{
-		position: relative;
-		z-index: 9;
-		.each-offer-box{
-			padding: rem(65) rem(35);
-			background-color: $white;
-			margin-bottom: 30px;
-			text-align: center;
-			box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.2);
-			border-radius:5px;
-			.offer-icon{
-				font-size: rem(45);
-				color: $orange;
-				display: inline-block;
-				margin-bottom: rem(15);
-			}
-		}
-	}
+.what-we-offer {
+    position: relative;
+    .offer-side-image {
+        position: absolute;
+        z-index: -1;
+        &.keyboard-img {
+            right: 0;
+            top: 0;
+        }
+        &.pen-img {
+            top: 50px;
+            left: 50px;
+        }
+        &.cup-img {
+            bottom: 0px;
+            left: 50px;
+        }
+    }
+    .offer-box-holder {
+        position: relative;
+        z-index: 9;
+        .each-offer-box {
+            padding: rem(65) rem(35);
+            background-color: $white;
+            text-align: center;
+            box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.2);
+            border-radius: 5px;
+            .offer-icon {
+                font-size: rem(45);
+                color: $orange;
+                display: inline-block;
+                margin-bottom: rem(15);
+            }
+        }
+    }
+    @include media-breakpoint-down(lg) {
+        .offer-box-holder .each-offer-box {
+            padding: rem(40) rem(20);
+            margin-top: 30px;
+        }
+    }
+    @include media-breakpoint-down(sm) {
+        .offer-box-holder {
+            .each-offer-box {
+                margin-top: 30px;
+                padding: rem(25);
+            }
+            .col-md-4:first-of-type .each-offer-box {
+                margin-top: 0
+            }
+        }
+    }
 }

@@ -7,7 +7,7 @@
     background-position: center;
     background-attachment: fixed;
     position: relative;
-    &:after{
+    &:after {
         height: 100%;
         width: 100%;
         content: '';
@@ -21,50 +21,77 @@
         text-align: center;
         margin: 0 auto;
         padding: 0;
-        color: $white; 
+        color: $white;
         position: relative;
         z-index: 9;
-        li{
+        li {
             display: inline-block;
             margin: 20px 65px;
             padding: 0;
-            @include media-breakpoint-down(lg){
+            @include media-breakpoint-down(lg) {
                 margin: 20px 40px;
             }
-            span.lnr{
+            span.lnr {
                 font-size: 45px;
             }
-            &:before{
+            &:before {
                 display: none;
             }
-            .counter-number{
+            .counter-number {
                 font-size: rem(50);
                 font-weight: bold;
                 margin: 20px 0;
-                line-height: 42px;  
+                line-height: 42px;
             }
-            .counter-text{
+            .counter-text {
                 font-size: 18px;
                 text-transform: uppercase;
                 margin: 0;
             }
+            @include media-breakpoint-down(sm) {
+                span.lnr {
+                    font-size: 40px;
+                }
+                .counter-number {
+                    font-size: rem(40);
+                    margin: 10px 0;
+                }
+                .counter-text {
+                    font-size: 17px;
+                }
+            }
+            @include media-breakpoint-down(xs) {
+                display: block;
+                margin: 0 0 45px;
+                &:last-of-type {
+                    margin-bottom: 0;
+                    &::after {
+                        display: none;
+                    }
+                }
+                &::after {
+                    position: absolute;
+                    content: '';
+                    width: 90%;
+                    height: 1px;
+                    background: rgba(255, 255, 255, 0.3);
+                    bottom: -19px;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                }
+                span.lnr {
+                    font-size: 30px;
+                }
+                .counter-number {
+                    font-size: rem(23);
+                    margin: 10px 0 5px;
+                    line-height: 100%;
+                }
+                .counter-text {
+                    font-size: 15px;
+                }
+            }
         }
     }
-}
-
-span.counter-icon {
-    font-size: 45px;
-}
-
-.counter-number {
-    font-size: 50px;
-    font-weight: bold;
-    margin: 20px 0;
-    line-height: 42px;
-}
-
-.counter-text {
-    font-size: 18px;
-    text-transform: uppercase;
-    margin: 0;
 }

@@ -9136,7 +9136,8 @@ footer .bottom-footer {
 .what-we-offer {
   position: relative; }
   .what-we-offer .offer-side-image {
-    position: absolute; }
+    position: absolute;
+    z-index: -1; }
     .what-we-offer .offer-side-image.keyboard-img {
       right: 0;
       top: 0; }
@@ -9152,7 +9153,6 @@ footer .bottom-footer {
     .what-we-offer .offer-box-holder .each-offer-box {
       padding: 4.0625rem 2.1875rem;
       background-color: #fff;
-      margin-bottom: 30px;
       text-align: center;
       box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.2);
       border-radius: 5px; }
@@ -9161,6 +9161,16 @@ footer .bottom-footer {
         color: #f94f22;
         display: inline-block;
         margin-bottom: 0.9375rem; }
+  @media (max-width: 1199px) {
+    .what-we-offer .offer-box-holder .each-offer-box {
+      padding: 2.5rem 1.25rem;
+      margin-top: 30px; } }
+  @media (max-width: 767px) {
+    .what-we-offer .offer-box-holder .each-offer-box {
+      margin-top: 30px;
+      padding: 1.5625rem; }
+    .what-we-offer .offer-box-holder .col-md-4:first-of-type .each-offer-box {
+      margin-top: 0; } }
 
 .what-we-offer-v2 .offer-box {
   background: #f8f9fa;
@@ -9375,20 +9385,40 @@ input.form-control {
         font-size: 18px;
         text-transform: uppercase;
         margin: 0; }
-
-span.counter-icon {
-  font-size: 45px; }
-
-.counter-number {
-  font-size: 50px;
-  font-weight: bold;
-  margin: 20px 0;
-  line-height: 42px; }
-
-.counter-text {
-  font-size: 18px;
-  text-transform: uppercase;
-  margin: 0; }
+      @media (max-width: 767px) {
+        .counter ul li span.lnr {
+          font-size: 40px; }
+        .counter ul li .counter-number {
+          font-size: 2.5rem;
+          margin: 10px 0; }
+        .counter ul li .counter-text {
+          font-size: 17px; } }
+      @media (max-width: 575px) {
+        .counter ul li {
+          display: block;
+          margin: 0 0 45px; }
+          .counter ul li:last-of-type {
+            margin-bottom: 0; }
+            .counter ul li:last-of-type::after {
+              display: none; }
+          .counter ul li::after {
+            position: absolute;
+            content: '';
+            width: 90%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.3);
+            bottom: -19px;
+            left: 0;
+            right: 0;
+            margin: auto; }
+          .counter ul li span.lnr {
+            font-size: 30px; }
+          .counter ul li .counter-number {
+            font-size: 1.4375rem;
+            margin: 10px 0 5px;
+            line-height: 100%; }
+          .counter ul li .counter-text {
+            font-size: 15px; } }
 
 .team .team-member-holder {
   position: relative;
