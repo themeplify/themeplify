@@ -22,6 +22,7 @@ form{
             color: inherit;
             padding: 8px 15px;
             resize: none;
+            font-size: rem(14);
             transition: all 0.3s;
             &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
                 color: $white;

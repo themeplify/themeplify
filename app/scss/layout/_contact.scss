@@ -11,8 +11,19 @@
             height: 100%;
             width: 100%;
         }
+        @include media-breakpoint-down(sm){
+            width: 100%;
+            height: 250px;
+        }
     }
     .contact-form-holder{
         padding-left: rem(120);
+        @include media-breakpoint-down(lg){
+            padding-left: rem(20);
+        }
+        @include media-breakpoint-down(sm){
+            padding-left: 0px;
+            padding-top: 235px;
+        }
     }
 }

@@ -20,6 +20,11 @@
 		padding-right: 15px;
 		max-width: 100%;
 		text-align: left;
+		.btn{
+			&:last-child{
+				margin-right: 0px;
+			}
+		}
 		@extend .transateXY-center;
 		@include media-breakpoint-down(lg){
 			max-width: 960px;
@@ -42,6 +47,8 @@
 			.btn{
 				margin-top: 8px;
 				font-size: rem(12);
+				padding: 5px 8px;
+				margin-right: rem(10);
 			}
 		}
 		.display-1{
@@ -59,7 +66,7 @@
 			}
 			@include media-breakpoint-down(xs){
 				font-size: rem(25);
-				margin-bottom: 5px;
+				margin-bottom: 0;
 			}
 		}
 		.display-4{
@@ -70,7 +77,7 @@
 			}
 			@include media-breakpoint-down(xs){
 				font-size: rem(14);
-				margin-bottom: 5px;
+				margin-bottom: 3px;
 			}
 		}
 	}
