@@ -9019,28 +9019,28 @@ nav.navbar {
   color: rgba(255, 255, 255, 0.7); }
 
 .bg-white,
-.transparent-bkg.bg-transparent {
+.show-white-nav .bg-transparent {
   box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6); }
   .bg-white .navbar-nav li a,
-  .transparent-bkg.bg-transparent .navbar-nav li a {
+  .show-white-nav .bg-transparent .navbar-nav li a {
     color: #232323; }
     .bg-white .navbar-nav li a.active, .bg-white .navbar-nav li a:hover,
-    .transparent-bkg.bg-transparent .navbar-nav li a.active,
-    .transparent-bkg.bg-transparent .navbar-nav li a:hover {
+    .show-white-nav .bg-transparent .navbar-nav li a.active,
+    .show-white-nav .bg-transparent .navbar-nav li a:hover {
       color: #f94f22; }
 
-.transparent-bkg.bg-transparent {
+.show-white-nav .bg-transparent {
   background: #fff !important; }
 
 .dark-logo {
   display: none; }
 
 .bg-white .light-logo,
-.transparent-bkg.bg-transparent .light-logo {
+.show-white-nav .bg-transparent .light-logo {
   display: none; }
 
 .bg-white .dark-logo,
-.transparent-bkg.bg-transparent .dark-logo {
+.show-white-nav .bg-transparent .dark-logo {
   display: block; }
 
 #to-top {

@@ -135,7 +135,7 @@ nav.navbar {
 }
 
 .bg-white,
-.transparent-bkg.bg-transparent {
+.show-white-nav .bg-transparent {
     box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
     .navbar-nav li {
         a {
@@ -148,7 +148,7 @@ nav.navbar {
     }
 }
 
-.transparent-bkg.bg-transparent {
+.show-white-nav .bg-transparent {
     background: #fff !important;
 }
 
@@ -157,7 +157,7 @@ nav.navbar {
 }
 
 .bg-white,
-.transparent-bkg.bg-transparent {
+.show-white-nav .bg-transparent {
     .light-logo {
         display: none;
     }
