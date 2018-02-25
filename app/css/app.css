@@ -8813,7 +8813,7 @@ p:last-of-type {
   float: none;
   margin: 0 auto; }
 
-.common-transition, .what-we-offer-v2 .offer-box, .team .team-member-holder img, .team .team-member-holder:after, .team .team-member-holder .member-info, .team .team-member-holder .member-info .member-social-contacts ul li a, .team .team-member-holder:hover .member-info, .isotop-gallery-holder .list.isotop-images-list li:after, .isotop-gallery-holder .list.isotop-images-list li img, .isotop-gallery-holder .list.isotop-images-list li .portfolio-desprition {
+.common-transition, .what-we-offer-v2 .offer-box, .team .team-member-holder img, .team .team-member-holder:after, .team .team-member-holder .member-info, .team .team-member-holder .member-info .member-social-contacts ul li a, .team .team-member-holder:hover .member-info, .isotop-gallery-holder .list.isotop-images-list li:after, .isotop-gallery-holder .list.isotop-images-list li img, .isotop-gallery-holder .list.isotop-images-list li .portfolio-desprition, .clients-holder ul li img {
   transition: all .5s;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -9822,16 +9822,42 @@ input.form-control {
         .isotop-gallery-holder .list.isotop-images-list li.list__item {
           width: 90%; } }
 
+.clients-holder.section-padding {
+  padding: 1.25rem 0; }
+
 .clients-holder ul {
   margin-top: 0px; }
   .clients-holder ul li {
     display: inline-block;
     width: 19.5%;
-    padding-left: 20px; }
+    padding-left: 20px;
+    padding-bottom: 0px;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .clients-holder ul li {
+        width: 19%; } }
+    @media (max-width: 575px) {
+      .clients-holder ul li {
+        width: 100%;
+        padding: 0px; }
+        .clients-holder ul li img {
+          max-width: 120px; } }
     .clients-holder ul li:first-child {
       padding-left: 0px; }
     .clients-holder ul li:before {
       display: none; }
+    .clients-holder ul li img {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      filter: grayscale(100%); }
+      .clients-holder ul li img:hover {
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+        filter: grayscale(0); }
 
 .btn {
   cursor: pointer;

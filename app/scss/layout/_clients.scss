@@ -1,15 +1,45 @@
 .clients-holder{
+	&.section-padding{
+		padding: rem(20) 0;
+	}
 	ul{
 		margin-top: 0px;
 		li{
 			display: inline-block;    
 			width: 19.5%;
     		padding-left: 20px;
+    		padding-bottom: 0px;
+    		text-align: center;
+    		@include media-breakpoint-down(sm){
+    			width: 19%;
+    		}
+    		@include media-breakpoint-down(xs){
+    			width: 100%;
+    			padding: 0px;
+    			img{
+    				max-width: 120px;
+    			}
+    		}
     		&:first-child{
     			padding-left: 0px;
     		}
 			&:before{
 				display: none;
+			}
+			img{
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+    			filter: grayscale(100%);
+    			@extend .common-transition;
+    			&:hover{
+					-webkit-filter: grayscale(0);
+					-moz-filter: grayscale(0);
+					-o-filter: grayscale(0);
+					-ms-filter: grayscale(0);
+	    			filter: grayscale(0);
+    			}
 			}
 		}
 	}
