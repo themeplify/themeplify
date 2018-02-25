@@ -7,7 +7,13 @@
         -o-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
         -ms-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
         overflow: hidden;
+        @include media-breakpoint-down(md){
+            margin-bottom: rem(25);
+        }
         .post-img{
+            img{
+                width: 100%;
+            }
             position: relative;
             .post-info{
                 position: absolute;
@@ -20,11 +26,6 @@
                 bottom: -30px;
                 font-size: rem(16);
                 line-height: 50px;
-                box-shadow: 0px 0px 30px red;
-                -webkit-box-shadow: 0px 0px 30px red;
-                -moz-box-shadow: 0px 0px 30px red;
-                -o-box-shadow: 0px 0px 30px red;
-                -ms-box-shadow: 0px 0px 30px red;
                 p{
                     position: absolute;
                     @extend .transateXY-center;

@@ -6,12 +6,20 @@ main{
 			list-style: none;
 			padding-left:rem(30);
 			padding-bottom: rem(10);
+			@include media-breakpoint-down(sm){
+				padding-bottom: rem(3);
+				padding-left: rem(25);
+			}
 			&:before{
 				position: absolute;
 				top: -2px;
 				left: 0;
 				content: "\f00c";
 				font-family: 'FontAwesome';
+				@include media-breakpoint-down(sm){
+					font-size: rem(12);
+					top: 2px;
+				}
 			}
 		}
 	}
