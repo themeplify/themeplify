@@ -9,20 +9,39 @@
 		background-color: rgba(0, 0, 0, .6);
 		content: '';
 	}
-	.display-1{
-		font-weight: $roboto-black;
-		line-height: 1;
-		color: $white;
-	}
-	.display-4{
-		font-size: rem(20);
-		color: $white;
-	}
 	.banner-content-holder{
 		position: absolute;
 		z-index: 9;
 		width: 1140px;
+		padding-left: 15px;
+		padding-right: 15px;
+		max-width: 100%;
 		text-align: left;
 		@extend .transateXY-center;
+		@include media-breakpoint-down(lg){
+			max-width: 960px;
+		}
+		@include media-breakpoint-down(md){
+			width: 720px;
+			padding: 0;
+			.btn{
+				margin-top: rem(15);
+			}
+		}
+		.display-1{
+			font-weight: $roboto-black;
+			line-height: 1;
+			color: $white;
+			@include media-breakpoint-down(lg){
+				font-size: rem(75);
+			}
+			@include media-breakpoint-down(md){
+				font-size: rem(55);
+			}
+		}
+		.display-4{
+			font-size: rem(20);
+			color: $white;
+		}
 	}
 }

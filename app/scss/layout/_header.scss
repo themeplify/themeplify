@@ -1,55 +1,55 @@
 header {
-    position: relative;
-    .header-nav {
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        min-height: 80px;
-        border-bottom: 1px solid #6b6865;
-        padding: 0;
-        .navbar-brand {
-            width: rem(160);
-        }
-        .navbar-nav {
-            .nav-item {
-                .nav-link {
-                    color: $white;
-                    text-transform: capitalize;
-                    padding: rem(30) rem(15);
-                    position: relative;
-                    z-index: 9;
-                    &:after {
-                        height: 0px;
-                        top: 0;
-                        left: 0;
-                        width: 100%;
-                        content: '';
-                        position: absolute;
-                        background-color: $orange;
-                        z-index: -1;
-                        transition: all .3s;
-                    }
-                    &:hover {
-                        &:after {
-                            height: 100%;
+    nav{
+        &.navbar{
+            .navbar-brand{
+
+            }
+            .navbar-toggler{
+                background-color: transparent;
+                color: $white;
+                border: 2px solid $primary-color;
+                border-radius: 0px;
+                padding: rem(5) rem(8);
+            }
+            .navbar-collapse{
+                @include media-breakpoint-down(md){
+                    background-color: $white;
+                }
+            }
+            .navbar-nav{
+                .nav-item{
+                    .nav-link{
+                        color: $white;
+                        font-size: rem(15);
+                        padding: rem(20) rem(15);
+                        text-transform: capitalize;
+                        @include media-breakpoint-down(md){
+                            color: $black;
+                            padding: rem(7) rem(15);
+                            border-bottom: 1px solid $gray-200;
+                        }
+                        &:hover, &.active{
+                            color: $primary-color;
                         }
                     }
-                    &.active {
-                        color: $primary-color;
-                    }
+                }
+            }
+            &.transparent-bkg{
+                .navbar-nav{
+                     .nav-item{
+                        .nav-link{
+                            color: $black;
+                            &:hover, &.active{
+                                color: $primary-color;
+                            }
+                        }
+                     }
                 }
             }
         }
     }
 }
 
-nav ul.navbar-nav li {
-    &.active a,
-    a:hover {
-        color: $primary-color;
-    }
-}
 
 .carousel-item {
     height: 100vh;
@@ -75,8 +75,6 @@ nav ul.navbar-nav li {
 }
 
 // Custom styles for this pen
-html,
-body,
 .carousel,
 .carousel-inner,
 .carousel-item {
