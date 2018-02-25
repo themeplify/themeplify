@@ -8765,6 +8765,9 @@ ul {
   margin: 0;
   padding: 0; }
 
+.animatedParent {
+  overflow: hidden; }
+
 .section-padding {
   padding: 7.5rem 0; }
   @media (max-width: 1199px) {
