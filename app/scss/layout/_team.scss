@@ -16,6 +16,9 @@
             opacity: 0;
             background-color: rgba(0, 0, 0, .5);
             @extend .common-transition;
+            @include media-breakpoint-down(sm) {
+                opacity: 1;
+            }
         }
         .member-info {
             position: absolute;
@@ -63,6 +66,13 @@
                 margin: 5px 0 0;
                 color: $white;
             }
+            @include media-breakpoint-down(sm) {
+                opacity: 1;
+                margin-top: 0;
+                &:after {
+                    opacity: 1;
+                }
+            }
         }
         &:hover {
             &:after {
@@ -82,4 +92,41 @@
             }
         }
     }
+    .owl-nav {
+        margin-top: 25px;
+        position: absolute;
+        @extend .transateX-center;
+        .owl-prev,
+        .owl-next {
+            display: inline-block;
+            font-size: 32px;
+            margin: 0 19px;
+            line-height: 100%;
+            &:hover {
+                color: $primary-color;
+            }
+        }
+        @include media-breakpoint-down(lg) {
+            position: relative;
+        }
+    }
+    // .owl-nav {
+    //     position: absolute;
+    //     width: 100%;
+    //     @extend .transateY-center;
+    //     .owl-next,
+    //     .owl-prev {
+    //         position: absolute;
+    //         font-size: 35px;
+    //         &:hover {
+    //             color: $primary-color;
+    //         }
+    //     }
+    //     .owl-next {
+    //         right: -65px;
+    //     }
+    //     .owl-prev {
+    //         left: -65px;
+    //     }
+    // }
 }

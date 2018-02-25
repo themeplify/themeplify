@@ -105,12 +105,12 @@ $(document).ready(function() {
     $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 30,
-            nav: false,
+            nav: true,
             smartSpeed: 500,
             autoplay: 4000,
             items: 1,
             dots: false,
-            navText: ['<span class="fa fa-angle-left"></span>', '<span class="fa fa-angle-right"></span>'],
+            navText: ['<span class="lnr lnr-arrow-left"></span>', '<span class="lnr lnr-arrow-right"></span>'],
             responsive: {
                 0: {
                     items: 1
