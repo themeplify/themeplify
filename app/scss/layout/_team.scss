@@ -92,24 +92,6 @@
             }
         }
     }
-    .owl-nav {
-        margin-top: 25px;
-        position: absolute;
-        @extend .transateX-center;
-        .owl-prev,
-        .owl-next {
-            display: inline-block;
-            font-size: 32px;
-            margin: 0 19px;
-            line-height: 100%;
-            &:hover {
-                color: $primary-color;
-            }
-        }
-        @include media-breakpoint-down(lg) {
-            position: relative;
-        }
-    }
     // .owl-nav {
     //     position: absolute;
     //     width: 100%;

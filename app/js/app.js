@@ -102,7 +102,7 @@ $(document).ready(function() {
             enabled: true
         }
     });
-    $('.owl-carousel').owlCarousel({
+    $('.team .owl-carousel').owlCarousel({
             loop: true,
             margin: 30,
             nav: true,
@@ -128,25 +128,39 @@ $(document).ready(function() {
                     items: 3
                 }
             }
-        })
+        });
         // owl carousel
-    $('.team-slider').owlCarousel({
-        loop: true,
-        margin: 10,
-        nav: true,
-        items: 2,
-        responsive: {
-            0: {
-                items: 1
-            },
-            600: {
-                items: 3
-            },
-            1000: {
-                items: 5
+        // $('.team-slider').owlCarousel({
+        //     loop: true,
+        //     margin: 10,
+        //     nav: true,
+        //     items: 2,
+        //     responsive: {
+        //         0: {
+        //             items: 1
+        //         },
+        //         600: {
+        //             items: 3
+        //         },
+        //         1000: {
+        //             items: 5
+        //         }
+        //     }
+        // });
+
+        // testimonial slider
+        $('.tesimonial .owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            nav: true,
+            items: 2,
+            navText: ['<span class="lnr lnr-arrow-left"></span>', '<span class="lnr lnr-arrow-right"></span>'],
+            responsive: {
+                0: {
+                    items: 1
+                }
             }
-        }
-    })
+        });
 
     // counter
     var a = 0;
