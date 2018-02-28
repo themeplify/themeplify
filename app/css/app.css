@@ -9050,10 +9050,18 @@ header nav.navbar .navbar-nav .nav-item .nav-link {
     padding-top: 7px; }
 
 footer .section-padding {
-  padding-bottom: 60px; }
+  padding: 60px 0; }
 
 footer .top-footer {
-  margin-bottom: 132px; }
+  margin-bottom: 130px;
+  background-color: #1c1c1c;
+  color: #6f6f6f; }
+  footer .top-footer p {
+    font-size: 13px; }
+  footer .top-footer h3 {
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
 
 footer .social-icons ul li {
   display: inline-block;
@@ -9074,12 +9082,11 @@ footer address {
     margin-bottom: 5px; }
 
 footer .bottom-footer {
-  border-top: 1px solid #ced4da;
   padding: 30px 0px;
   position: fixed;
   bottom: 0;
   width: 100%;
-  background-color: #212529;
+  background-color: #141414;
   z-index: -1; }
   footer .bottom-footer p.text-small {
     margin-top: 20px;
