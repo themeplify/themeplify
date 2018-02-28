@@ -1,14 +1,28 @@
 .tesimonial{
     .testimonial-outer-wrapper{
-        padding-left: 85px;
-        padding-right: 85px; 
     }
     .testimonial-carousel{
         .testimonial-img-wrap{
-            margin: 25px 0;
+            img{
+                width: auto;
+            }
         }
-        .client-info{
-            margin: 25px 0;
+        .testimonial-content-wrap{
+            position: relative;
+            img{
+                &.quote{
+                    position: absolute;
+                    right: -60px;
+                    top: 0px;
+                    width: auto;
+                }
+            }
+            .client-info{
+                margin: 25px 0;
+                @include media-breakpoint-down(sm){
+                    margin-bottom: 0px;
+                }
+            }
         }
     }
 }

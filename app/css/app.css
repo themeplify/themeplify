@@ -8829,7 +8829,7 @@ p:last-of-type {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%); }
 
-.transateX-center, .team .owl-nav {
+.transateX-center, .owl-nav {
   left: 50%;
   transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
@@ -8844,6 +8844,26 @@ p:last-of-type {
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%); }
+
+.owl-nav {
+  margin-top: 25px;
+  position: absolute;
+  text-align: center; }
+  @media (max-width: 767px) {
+    .owl-nav {
+      margin-top: 10px; } }
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    display: inline-block;
+    font-size: 32px;
+    margin: 0 19px;
+    line-height: 100%; }
+    .owl-nav .owl-prev:hover,
+    .owl-nav .owl-next:hover {
+      color: #f94f22; }
+  @media (max-width: 1199px) {
+    .owl-nav {
+      position: relative; } }
 
 h1, .h1 {
   font-family: "Roboto", sans-serif;
@@ -9446,31 +9466,21 @@ input.form-control {
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
 
-.team .owl-nav {
-  margin-top: 25px;
-  position: absolute; }
-  .team .owl-nav .owl-prev,
-  .team .owl-nav .owl-next {
-    display: inline-block;
-    font-size: 32px;
-    margin: 0 19px;
-    line-height: 100%; }
-    .team .owl-nav .owl-prev:hover,
-    .team .owl-nav .owl-next:hover {
-      color: #f94f22; }
-  @media (max-width: 1199px) {
-    .team .owl-nav {
-      position: relative; } }
+.tesimonial .testimonial-carousel .testimonial-img-wrap img {
+  width: auto; }
 
-.tesimonial .testimonial-outer-wrapper {
-  padding-left: 85px;
-  padding-right: 85px; }
-
-.tesimonial .testimonial-carousel .testimonial-img-wrap {
-  margin: 25px 0; }
-
-.tesimonial .testimonial-carousel .client-info {
-  margin: 25px 0; }
+.tesimonial .testimonial-carousel .testimonial-content-wrap {
+  position: relative; }
+  .tesimonial .testimonial-carousel .testimonial-content-wrap img.quote {
+    position: absolute;
+    right: -60px;
+    top: 0px;
+    width: auto; }
+  .tesimonial .testimonial-carousel .testimonial-content-wrap .client-info {
+    margin: 25px 0; }
+    @media (max-width: 767px) {
+      .tesimonial .testimonial-carousel .testimonial-content-wrap .client-info {
+        margin-bottom: 0px; } }
 
 .testimonial-v2 {
   background: url(../images/testimonial-v2-background.jpg);
