@@ -19,6 +19,9 @@ footer{
 					background-color: $gray-700;
 					text-align: center;
 					line-height: rem(30);
+					&:hover{
+						background-color: $primary-color;
+					}
 				}
 			}
 		}

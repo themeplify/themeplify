@@ -15,6 +15,18 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarCodeply" data-offset="80">
+
+    <!-- loader: start -->
+    <div class="loader-holder">
+        <div id="rotate">
+          <div id="move">
+            <div id="dot"></div>
+          </div>
+          <div id="ring"></div>
+        </div>
+    </div>
+    <!-- loader: end -->
+
     <header>
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
@@ -39,6 +51,9 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link" href="#why-choose-us">Why choose us</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="nav-item">
@@ -58,10 +73,10 @@
 
     <!-- Single Banner Image start -->
     <div class="single-image-banner" id="home">
-        <img src="images/header-img3.jpg" alt="banner" class="banner-img">
+        <img src="images/banner-img.jpg" alt="banner" class="banner-img">
         <div class="banner-content-holder">
-            <h2 class="display-4">we're a design studio that believe in the ideas</h2>
-            <h1 class="display-1">CREATIVE <br> DESIGNS</h1>
+            <h2 class="display-4">The theme that helps you to build a</h2>
+            <h1 class="display-1">PROFITABLE <br> BUSINESS</h1>
             <a href="#" class="btn btn-primary-white">Get Started now</a>
             <a href="#" class="btn btn-outline-primary-white">Download Theme</a>
         </div>
@@ -73,31 +88,31 @@
         <!-- main start -->
         <main>
             <!-- what we offer -->
-            <section class="section-padding bg-white what-we-offer animatedParent" id="What-we-offer">
+            <section class="section-padding bg-white what-we-offer animatedParent animateOnce" id="What-we-offer">
                 <div class="container">
                     <h2 class="text-center">What we offer</h2>
                     <p class="section-sub-title text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
                     <div class="offer-box-holder">
                         <div class="row">
                             <div class="col-md-4">
-                                <div class="each-offer-box animated bounceInLeft">
-                                    <span class="offer-icon lnr lnr-alarm"></span>
-                                    <h4>Master Slider</h4>
-                                    <p>One two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated. Best agency theme 2015. Nothin’s gonna turn us back now.</p>
+                                <div class="each-offer-box animated bounceInLeft delay-300">
+                                    <span class="offer-icon lnr lnr-magic-wand"></span>
+                                    <h4>Modern design</h4>
+                                    <p>Maecenas ornare arcu id neque viverra, et suscipit turpis venenatis. Vivamus egestas diam ut auctor ultricies. Cras iuoi eutiu aliquet tellus.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="each-offer-box animated bounceInLeft">
-                                    <span class="offer-icon lnr lnr-clock"></span>
-                                    <h4>Time Saving</h4>
-                                    <p>One two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated. Best agency theme 2015. Nothin’s gonna turn us back now.</p>
+                                <div class="each-offer-box animated bounceInLeft delay-300">
+                                    <span class="offer-icon lnr lnr-code"></span>
+                                    <h4>Sandard coding structure</h4>
+                                    <p>Proin eget dui sagittis, tincidunt orci et, cursus orci. Phasellus tortor leo, sodales eget fringilla non, aliquet et sem. Cras sodales.</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <div class="each-offer-box animated bounceInLeft">
-                                    <span class="offer-icon lnr lnr-home"></span>
-                                    <h4>Powerful Blog</h4>
-                                    <p>One two three four five six seven eight Sclemeel schlemazel hasenfeffer incorporated. Best agency theme 2015. Nothin’s gonna turn us back now.</p>
+                                <div class="each-offer-box animated bounceInLeft delay-300">
+                                    <span class="offer-icon lnr lnr-file-empty"></span>
+                                    <h4>Detail documentation</h4>
+                                    <p>lorem finibus maximus placerat, purus augue varius nulla, sed posuere risus lacus ut sapien. Suspendisse potenti. Quisque dapibus ullamcorper.</p>
                                 </div>
                             </div>
                         </div>
@@ -108,13 +123,13 @@
             </section>
             <!-- why choose us -->
             <!-- who we are -->
-            <section class="who-we-are bg-dark section-padding animatedParent" id="about">
-                <img src="images/landing-15.jpg" alt="" class="who-we-are-main-img">
+            <section class="who-we-are bg-dark section-padding animatedParent animateOnce" id="about">
+                <img src="images/right-img.jpg" alt="" class="who-we-are-main-img">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="who-we-are-content who-we-are-content-left animated bounceInLeft">
-                                <h2>Streamline your workflow with Stack</h2>
+                            <div class="who-we-are-content who-we-are-content-left animated bounceInLeft delay-300" >
+                                <h2>A Flexible theme for your business</h2>
                                 <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta
                                     decima quinta decima anteposuerit litterarum.</p>
                                 <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
@@ -124,18 +139,18 @@
                     </div>
                 </div>
             </section>
-            <section class="who-we-are bg-light section-padding animatedParent">
-                <img src="images/landing-16.jpg" alt="" class="who-we-are-main-img-2">
+            <section class="who-we-are bg-light section-padding animatedParent animateOnce">
+                <img src="images/left-img.jpg" alt="" class="who-we-are-main-img-2">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                         </div>
                         <div class="col-md-6">
-                            <div class="who-we-are-content who-we-are-content-right animated bounceInRight">
-                                <h2>Streamline your workflow with Stack</h2>
-                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta
+                            <div class="who-we-are-content who-we-are-content-right animated bounceInRight delay-300">
+                                <h2>Theme that supports all devices</h2>
+                                <p>ectus. Donec iaculis mauris quis dolor porttitor, eget suscipit orci hendrerit. Suspendisse molestie metus vitae dui vestibulum scelerisque. Aenean elementum nec neque sed tempus. Etiam lectus urna, feugiat eu porttitor eu, lacinia dictum neque. Etiam vehicula ipsum id lobortis placerat.
                                     decima quinta decima anteposuerit litterarum.</p>
-                                <p>Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.</p>
+                                <p>Aliquam maximus nec orci in condimentum. Quisque ipsum erat, sodales quis maximus eget, cursus quis libero. Donec vel pellentesque urna</p>
                                 <a href="" class="btn btn-outline-primary-dark">Learn More</a>
                             </div>
                         </div>
@@ -145,18 +160,18 @@
             <!-- who we are -->
 
             <!-- why choose us -->
-            <section class="section-padding why-choose-us animatedParent bg-white">
+            <section class="section-padding why-choose-us animatedParent bg-white animateOnce" id="why-choose-us">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="left-why-choose-us-centent animated bounceInLeft">
-                                <h2>Unique, truly responsive</h2>
+                            <div class="left-why-choose-us-centent animated bounceInLeft delay-300">
+                                <h2>Some reasons to choose themeplify</h2>
                                 <p>Lorem Ipsum is simply dummy text of the prisetting industry. Lorem Ipsum has been the industry's.</p>
                                 <ul>
-                                    <li>Beautiful and easy to understand UI</li>
-                                    <li>Theme advantages are pixel perfect design</li>
-                                    <li>Present your services with flexible</li>
-                                    <li>Unlimited power and customization possibilities</li>
+                                    <li>Modern technologies like Bootstrap4, Owl Slider etc.</li>
+                                    <li>Easily Customizable, and all major browser supports.</li>
+                                    <li>Detail and Well documention with support</li>
+                                    <li>Fully functional ajax contact form.</li>
                                 </ul>
                                 <a href="" class="btn btn-outline-primary-dark">Learn More</a>
                             </div>
@@ -174,12 +189,12 @@
                 <div class="container">
                     <ul class="no-list" id="counter">
                         <li>
-                            <span class="lnr lnr-file-empty counter-icon"></span>
+                            <span class="lnr lnr-checkmark-circle counter-icon"></span>
                             <p class="counter-number" data-count="300">0</p>
                             <p class="counter-text">PROJECTS FINISHED</p>
                         </li>
                         <li>
-                            <span class="lnr lnr-pencil counter-icon"></span>
+                            <span class="lnr lnr-smile counter-icon"></span>
                             <p class="counter-number" data-count="500">100</p>
                             <p class="counter-text">Happy Clients</p>
                         </li>
@@ -189,7 +204,7 @@
                             <p class="counter-text">working hours</p>
                         </li>
                         <li>
-                            <span class="lnr lnr-rocket counter-icon"></span>
+                            <span class="lnr lnr-flag counter-icon"></span>
                             <p class="counter-number" data-count="50">100</p>
                             <p class="counter-text">Awards won</p>
                         </li>
@@ -254,14 +269,14 @@
             <!-- portfolio -->
 
             <!-- parallax -->
-            <section class="section-padding parallax-section animatedParent">
+            <section class="section-padding parallax-section animatedParent animateOnce">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
                         </div>
-                        <div class="col-md-6 animated bounceInRight">
-                            <h2 class="text-white">Landing X-Space perfectly in the tar.</h2>
-                            <p class="text-white">Verko is the Best agency and landing page WordPress theme that focused on Marketing your services or products. with landing pages template, encourage user to take another step forward to your business using the form, call-to-action,</p>
+                        <div class="col-md-6 animated bounceInRight delay-300">
+                            <h2 class="text-white">We don’t just build websites, we build your business</h2>
+                            <p class="text-white">ed consequat, ipsum at finibus sollicitudin, risus nulla finibus velit, non dignissim risus velit id lacus. Aliquam iaculis pharetra laoreet. Nulla sollicitudin nibh lacus, sit amet auctor mauris ornare at.</p>
                             <a href=" " class="btn btn-outline-primary-white ">Buy theme now</a>
                         </div>
                     </div>
@@ -366,11 +381,11 @@
             <!-- newsletter subscription -->
 
             <!-- blog -->
-            <section class="section-padding bg-light blog animatedParent" id="blog">
+            <section class="section-padding bg-light blog animatedParent animateOnce" id="blog">
                 <div class="container">
                     <h2 class="text-center">Latest from Our Blog</h2>
                     <p class="section-sub-title text-center">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-                    <div class="row animated bounceInUp">
+                    <div class="row animated bounceInUp delay-300">
                         <div class="col-sm-12 col-md-12 col-lg-4 mb-60 mb-xs-40">
                             <div class="blog-holder rounded-top">
                                 <div class="post-img">
@@ -381,7 +396,7 @@
                                 </div>
                                 <div class="blog-description">
                                     <div class="post-title">
-                                        <h4><a href="#">New Web Design Trends</a></h4>
+                                        <h4><a href="#">Trending in web design</a></h4>
                                     </div>
                                     <div class="post-text">
                                         Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
@@ -402,10 +417,10 @@
                                 </div>
                                 <div class="blog-description">
                                     <div class="post-title">
-                                        <h4><a href="#">New Web Design Trends</a></h4>
+                                        <h4><a href="#">Our favorit things in 2017</a></h4>
                                     </div>
                                     <div class="post-text">
-                                        Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+                                       Nam mollis sed enim elementum lacinia. Sed lacinia purus quam, sed cursus justo consequat vel. Donec tempus, odio quis nisi ligula.
                                     </div>
                                     <div class="post-more">
                                         <a href="" class="btn btn-outline-primary-dark">Read More</a>
@@ -423,10 +438,10 @@
                                 </div>
                                 <div class="blog-description">
                                     <div class="post-title">
-                                        <h4><a href="#">New Web Design Trends</a></h4>
+                                        <h4><a href="#">Team work matters a lot</a></h4>
                                     </div>
                                     <div class="post-text">
-                                        Maecenas volutpat, diam enim sagittis quam, id porta quam. Sed id dolor consectetur fermentum nibh volutpat, accumsan purus.
+                                         Pellentesque ac fermentum magna, quis lacinia odio. Pellentesque nisi ligula, imperdiet a felis non, malesuada convallis nibh.
                                     </div>
                                     <div class="post-more">
                                         <a href="" class="btn btn-outline-primary-dark">Read More</a>
@@ -509,7 +524,7 @@
             <!-- testimonial -->
 
             <!-- contact -->
-            <section class="contact-holder bg-dark section-padding">
+            <section class="contact-holder bg-dark section-padding" id="contact">
                 <div class="container">
                     <div class="map-holder">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d14726.741046162002!2d88.39675335!3d22.66552055!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1513536051690" height="457" style="border:0" allowfullscreen></iframe>
@@ -518,21 +533,23 @@
                         <div class="col-md-6 ml-auto">
                             <div class="contact-form-holder">
                                 <h2>Contact us</h2>
-                                <form>
+                                <form id="contactForm">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" placeholder="Name" required="" name="name">
                                     </div>
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" placeholder="Email" required="" name="email">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" class="form-control" placeholder="Subject" required="" name="subject">
                                     </div>
                                     <div class="form-group">
-                                        <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                                        <textarea class="form-control" rows="3" placeholder="Message" required="" name="message"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-outline-primary-white">Submit</button>
+                                    <p class="ajax-load"></p>
                                 </form>
+                                <p class="form-status"></p>
                             </div>
                         </div>
                     </div>

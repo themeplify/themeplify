@@ -196,3 +196,10 @@ $(document).ready(function() {
     });
 
 });
+
+
+// loader
+$(window).on('load', function(){
+    $(".loader-holder").fadeOut(300);
+    $('body').css('overflow-y', 'auto');
+});

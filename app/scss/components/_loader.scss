@@ -1,0 +1,90 @@
+.loader-holder{
+  height: 100%;
+  width: 100%;
+  background-color: $white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 99999;
+  #dot {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: $primary-color;
+  }
+
+  #ring {
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    position: absolute;
+    margin: auto;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border: 2px solid $primary-color;
+    animation-name: bloop;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-delay: 0.7s;
+  }
+  #move {
+    position: absolute;
+    margin: auto;
+    animation-name: move;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+  }
+
+  #rotate {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    z-index: 9999;
+  }
+}
+
+@keyframes bloop {
+  0% {width: 10px; height: 10px; opacity: 1;}
+  100% {width: 100px; height: 100px; opacity: 0;}
+}
+
+@keyframes move {
+  0% {right: 0;
+  left: 0;
+  top: -190px;
+  bottom: 0;}
+  
+  30% {transform: scale(1.0)}
+  50% {transform: scale(0.5)}
+  70% {transform: scale(1.0)}
+  
+  100% {right: 0;
+  left: 0;
+  top: 190px;
+  bottom: 0;}
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg);}
+  100% {transform: rotate(360deg);}
+}

@@ -1,5 +1,8 @@
-.single-image-banner{
+.single-image-banner, .video-banner{
 	position: relative;
+	video{
+		vertical-align: middle;
+	}
 	img{
 		width: 100%;
 	}
@@ -9,7 +12,7 @@
 		width: 100%;
 		left: 0;
 		top: 0;
-		background-color: rgba(0, 0, 0, .6);
+		background-color: rgba(0, 0, 0, .7);
 		content: '';
 	}
 	.banner-content-holder{
@@ -82,3 +85,5 @@
 		}
 	}
 }
+
+// video banner

@@ -54,7 +54,7 @@
                             line-height: 35px;
                             @extend .common-transition;
                             &:hover {
-                                background: $gray-900;
+                                background: $primary-color;
                                 color: $white;
                             }
                         }
