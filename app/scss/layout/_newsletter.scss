@@ -1,36 +1,25 @@
-.newsletter-subscription{
-	background: url(../images/newsletter-background.jpg);
-	background-size: cover;
-	background-position: center center;
-	.section-sub-title{
-		max-width: 100%;
-		margin-left: 0;
-	}
-	.form-group{
-		.form-control{
-			border-top-right-radius: 0px;
-			border-bottom-right-radius: 0px;
-			width: calc(100% - 120px);
-			float: left;
-			color: $white;
-		}
-		input[type="submit"]{
-			width: 120px;
-			text-align: center;
-			float: left;
-			margin-right: 0px;
-			height: 40px;
-		}
-	}
-}
-
-input{
-	&.form-control{
-		background-color: rgba(255, 255, 255, .1);
-		border: 0px;
-		height: rem(40);
-		&:focus{
-			background-color: rgba(255, 255, 255, .1);
-		}
-	}
+.newsletter-subscription {
+    background: url(../images/newsletter-background.jpg);
+    background-size: cover;
+    background-position: center center;
+    .section-sub-title {
+        max-width: 100%;
+        margin-left: 0;
+    }
+    .form-group {
+        .form-control {
+            border-top-right-radius: 0px;
+            border-bottom-right-radius: 0px;
+            width: calc(100% - 120px);
+            float: left;
+            color: $white;
+        }
+        input[type="submit"] {
+            width: 120px;
+            text-align: center;
+            float: left;
+            margin-right: 0px;
+            height: 40px;
+        }
+    }
 }
