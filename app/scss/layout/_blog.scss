@@ -1,5 +1,5 @@
-.blog{
-    .blog-holder{
+.blog {
+    .blog-holder {
         background-color: $white;
         box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
         -webkit-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
@@ -7,54 +7,55 @@
         -o-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
         -ms-box-shadow: 0px 0px 30px rgba(115, 128, 157, 0.1);
         overflow: hidden;
-        @include media-breakpoint-down(md){
+        @include media-breakpoint-down(md) {
             margin-bottom: rem(25);
         }
-        .post-img{
-            img{
+        .post-img {
+            img {
                 width: 100%;
             }
             position: relative;
-            .post-info{
-                position: absolute;
-                color: $white;
-                text-align: center;
-                height: 60px;
-                width: 60px;
-                border-radius: 50%;
-                right: 20px;
-                bottom: -30px;
-                font-size: rem(16);
-                line-height: 50px;
-                p{
-                    position: absolute;
-                    @extend .transateXY-center;
-                }
-                span{
-                    display: block;
-                    line-height: 1;
-                }
-                &:after{
-                    content: '';
-                    position: absolute;
-                    bottom: 0;
-
-                }
-            }
         }
-        .blog-description{
+        .blog-description {
             padding: 20px 25px;
-            .post-title{
+            .post-title {
                 max-width: 83%;
-                a{
+                a {
                     color: $gray-800;
                 }
             }
-            .post-more{
-                .btn{
+            .post-more {
+                .btn {
                     margin-bottom: 15px;
                 }
             }
         }
+    }
+}
+
+.post-info {
+    position: absolute;
+    color: $white;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    right: 20px;
+    bottom: -30px;
+    font-size: rem(16);
+    line-height: 50px;
+    z-index: 1;
+    p {
+        position: absolute;
+        @extend .transateXY-center;
+    }
+    span {
+        display: block;
+        line-height: 1;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
     }
 }

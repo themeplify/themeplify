@@ -1,17 +1,19 @@
 header {
-    &.show-white-nav{
-         box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
-         nav{
-            &.bg-transparent{
+    &.show-white-nav {
+        box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+        nav {
+            &.bg-transparent {
                 background-color: $white !important;
+                padding-top: 0;
+                padding-bottom: 0;
             }
-            &.navbar{
+            &.navbar {
                 transition-duration: .5s;
                 -webkit-transition-duration: .5s;
                 -moz-transition-duration: .5s;
                 -ms-transition-duration: .5s;
                 -o-transition-duration: .5s;
-                .navbar-brand{
+                .navbar-brand {
                     .light-logo {
                         display: none;
                     }
@@ -19,57 +21,59 @@ header {
                         display: block;
                     }
                 }
-                .navbar-toggler{
+                .navbar-toggler {
                     color: $black;
                 }
-                .navbar-nav{
-                    .nav-item{
-                        .nav-link{
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
                             color: $black;
                         }
                     }
                 }
             }
-         }
+        }
     }
-    nav{
-        &.navbar{
-            .navbar-brand{
+    nav {
+        &.navbar {
+            transition: all 0.5s;
+            .navbar-brand {
                 .dark-logo {
                     display: none;
                 }
-                @include media-breakpoint-down(sm){
+                @include media-breakpoint-down(sm) {
                     width: 100px;
                 }
             }
-            .navbar-toggler{
+            .navbar-toggler {
                 background-color: transparent;
                 color: $white;
                 border: 2px solid $primary-color;
                 border-radius: 0px;
                 padding: rem(5) rem(8);
-                @include media-breakpoint-down(sm){
+                @include media-breakpoint-down(sm) {
                     padding: 1px 3px;
                 }
             }
-            .navbar-collapse{
-                @include media-breakpoint-down(md){
+            .navbar-collapse {
+                @include media-breakpoint-down(md) {
                     background-color: $white;
                 }
             }
-            .navbar-nav{
-                .nav-item{
-                    .nav-link{
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
                         color: $white;
                         font-size: rem(15);
                         padding: rem(20) rem(15);
                         text-transform: capitalize;
-                        @include media-breakpoint-down(md){
+                        @include media-breakpoint-down(md) {
                             color: $black;
                             padding: rem(7) rem(15);
                             border-bottom: 1px solid $gray-200;
                         }
-                        &:hover, &.active{
+                        &:hover,
+                        &.active {
                             color: $primary-color;
                         }
                     }
@@ -78,7 +82,6 @@ header {
         }
     }
 }
-
 
 .hide-nav {
     top: -100px;
