@@ -62,38 +62,8 @@
 
 })(jQuery);
 
-// jQuery(document).ready(function($){
-//     $(".dropdown").hover(            
-//         function() {
-//             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
-//             $(this).toggleClass('open');        
-//         },
-//         function() {
-//             $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
-//             $(this).toggleClass('open');       
-//         }
-//     );
-// });
 
 $(document).ready(function() {
-    // Initializing 
-    // ISOTOPE
-    $grid = $('.list').isotope({
-        // options
-        itemSelector: '.list__item',
-        layoutMode: 'masonry',
-        masonry: {
-            gutter: 0
-        }
-    });
-    // filter items on button click
-    $('.js-filter').on('click', 'button', function() {
-        var filterValue = $(this).attr('data-filter');
-        $grid.isotope({ filter: filterValue });
-        $('.js-filter button').removeClass('is-active');
-        $(this).addClass('is-active');
-    });
-
     // image popup
     $('.image-link').magnificPopup({ type: 'image' });
     $('.gallery-item').magnificPopup({
@@ -202,4 +172,23 @@ $(document).ready(function() {
 $(window).on('load', function(){
     $(".loader-holder").fadeOut(300);
     $('body').css('overflow-y', 'auto');
+
+    // isotope
+    // Initializing 
+    // ISOTOPE
+    $grid = $('.list').isotope({
+        // options
+        itemSelector: '.list__item',
+        layoutMode: 'masonry',
+        masonry: {
+            gutter: 0
+        }
+    });
+    // filter items on button click
+    $('.js-filter').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({ filter: filterValue });
+        $('.js-filter button').removeClass('is-active');
+        $(this).addClass('is-active');
+    });
 });

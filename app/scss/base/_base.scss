@@ -138,7 +138,7 @@ p {
 // owl nav
 .owl-nav {
     margin-top: 25px;
-    position: absolute;
+    position: relative;
     text-align: center;
     @extend .transateX-center;
     @include media-breakpoint-down(sm) {
