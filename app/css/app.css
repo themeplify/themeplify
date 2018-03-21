@@ -7,36 +7,6 @@
  */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i");
 @import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900");
-:root {
-  --blue: #007bff;
-  --indigo: #6610f2;
-  --purple: #6f42c1;
-  --pink: #e83e8c;
-  --red: #f52e19;
-  --orange: #fd7e14;
-  --yellow: #fadd1d;
-  --green: #0aa11f;
-  --teal: #20c997;
-  --cyan: #17a2b8;
-  --white: #fff;
-  --gray: #868e96;
-  --gray-dark: #343a40;
-  --primary: #007bff;
-  --secondary: #868e96;
-  --success: #0aa11f;
-  --info: #17a2b8;
-  --warning: #fadd1d;
-  --danger: #f52e19;
-  --light: #f8f9fa;
-  --dark: #343a40;
-  --breakpoint-xs: 0;
-  --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
-  --breakpoint-lg: 992px;
-  --breakpoint-xl: 1200px;
-  --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --font-family-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-
 @media print {
   *,
   *::before,
@@ -8848,7 +8818,7 @@ p:last-of-type {
 
 .owl-nav {
   margin-top: 25px;
-  position: absolute;
+  position: relative;
   text-align: center; }
   @media (max-width: 767px) {
     .owl-nav {
@@ -8942,6 +8912,9 @@ p, .body-copy {
 .text-small {
   font-size: 0.875rem;
   margin-bottom: 0.0625rem; }
+
+a {
+  color: #f94f22; }
 
 @media (max-width: 1199px) {
   h2 {

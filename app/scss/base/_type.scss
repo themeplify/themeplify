@@ -40,6 +40,10 @@ p, .body-copy{
 	margin-bottom: rem(1);
 }
 
+// default anchor
+a{
+	color: $primary-color;
+}
 // Responsive
 h2{
 	@include media-breakpoint-down(lg){
