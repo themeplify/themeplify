@@ -6,7 +6,7 @@
 	img{
 		width: 100%;
 	}
-	&:after{
+	&.banner-overlay:after{
 		position: absolute;
 		height: 100%;
 		width: 100%;

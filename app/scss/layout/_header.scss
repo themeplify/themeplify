@@ -37,10 +37,7 @@ header {
     nav {
         &.navbar {
             transition: all 0.5s;
-            .navbar-brand {
-                .dark-logo {
-                    display: none;
-                }
+            .navbar-brand { 
                 @include media-breakpoint-down(sm) {
                     width: 100px;
                 }
@@ -62,8 +59,7 @@ header {
             }
             .navbar-nav {
                 .nav-item {
-                    .nav-link {
-                        color: $white;
+                    .nav-link { 
                         font-size: rem(15);
                         padding: rem(20) rem(15);
                         text-transform: capitalize;
@@ -90,6 +86,52 @@ header {
     -moz-transition-duration: .5s;
     -ms-transition-duration: .5s;
     -o-transition-duration: .5s;
+}
+
+// nav color 
+.bg-dark,
+.bg-transparent {
+    .navbar-nav li {
+        a {
+            color: #fff;
+        }
+        a:hover,
+        &.active a {
+            color: rgba(255, 255, 255, 0.7);
+        }
+    }
+}
+
+.bg-white,
+.show-white-nav .bg-transparent {
+    box-shadow: 0 5px 10px -10px rgba(0, 0, 0, 0.6);
+    .navbar-nav li {
+        a {
+            color: #232323;
+            &.active,
+            &:hover {
+                color: $primary-color;
+            }
+        }
+    }
+}
+
+.show-white-nav .bg-transparent {
+    background: #fff !important;
+}
+
+.dark-logo {
+    display: none;
+}
+
+.bg-white,
+.show-white-nav .bg-transparent {
+    .light-logo {
+        display: none;
+    }
+    .dark-logo {
+        display: block;
+    }
 }
 
 #to-top {

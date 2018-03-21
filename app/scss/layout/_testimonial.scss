@@ -22,6 +22,12 @@
                 @include media-breakpoint-down(sm){
                     margin-bottom: 0px;
                 }
+                h4{
+                    margin-bottom: 0;
+                }
+                p{
+                    font-size: 14px;
+                }
             }
         }
     }

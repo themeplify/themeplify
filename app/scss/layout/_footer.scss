@@ -3,7 +3,7 @@ footer {
         padding: 60px 0;
     }
     .top-footer {
-        margin-bottom: 130px;
+        margin-bottom: 128px;
         background-color: #1c1c1c;
         color: #6f6f6f;
         p {
@@ -30,6 +30,9 @@ footer {
             .footer-content-wrap {
                 margin-top: 20px;
             }
+        }
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 0;
         }
     }
     .social-icons {
@@ -60,8 +63,13 @@ footer {
         p {
             &.text-small {
                 margin-top: 20px;
-                color: $white;
+                font-size: 13px;
+                color: #757575;
             }
+        }
+        @include media-breakpoint-down(sm) {
+            position: relative;
+            z-index: 1;
         }
     }
     .newslatter-holder {
